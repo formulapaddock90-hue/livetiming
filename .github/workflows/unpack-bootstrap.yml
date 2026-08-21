@@ -117,4 +117,4 @@ jobs:
           git commit -m "Extract imported livetiming project"
           git push origin HEAD:main
 
-# second push: workflow already exists on main
+# merged once to trigger the existing workflow on main
