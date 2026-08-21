@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classifica F1 Live</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #2a2a2a;
+            border: 1px solid #444;
+        }
+        thead {
+            background: #333;
+            font-weight: bold;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #444;
+        }
+        th {
+            background: #1e1e1e;
+            color: #fff;
+        }
+        tr:hover {
+            background: #333;
+        }
+        .loading {
+            text-align: center;
+            padding: 20px;
+        }
+        .error {
+            background: #8b0000;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .success {
+            background: #006400;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .timestamp {
+            text-align: center;
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+        .export-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .export-btn {
+            background: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .export-btn:hover {
+            background: #45a049;
+        }
+        .export-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Classifica F1 Live</h1>
+        <div id="message"></div>
+        <div class="export-section">
+            <button class="export-btn" id="exportBtn" onclick="exportClassifica()">
+                🏁 Esporta su FormulaPaddock
+            </button>
+        </div>
+        <table id="classificaTable">
+            <thead>
+                <tr>
+                    <th>Pos</th>
+                    <th>N.</th>
+                    <th>Pilota</th>
+                    <th>Team</th>
+                    <th>Best Lap</th>
+                    <th>Ultimo Giro</th>
+                    <th>Giri</th>
+                    <th>Gap</th>
+                </tr>
+            </thead>
+            <tbody id="classificaBody">
+                <tr class="loading">
+                    <td colspan="8">Caricamento dati...</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="timestamp" id="timestamp"></div>
+    </div>
+
+    <script>
+        async function exportClassifica() {
+            const btn = document.getElementById('exportBtn');
+            const originalText = btn.textContent;
+
+            try {
+                btn.disabled = true;
+                btn.textContent = '⏳ Caricamento...';
+
+                const response = await fetch('/upload-classifica-ftp.php', {
+                    method: 'POST'
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    document.getElementById('message').innerHTML = `
+                        <div class="success">✅ Classifica esportata con successo su <a href="${result.url}" target="_blank" style="color: #fff; text-decoration: underline;">FormulaPaddock</a></div>
+                    `;
+                    btn.textContent = '✅ Esportazione riuscita!';
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.disabled = false;
+                    }, 3000);
+                } else {
+                    throw new Error(result.error || 'Errore sconosciuto');
+                }
+            } catch (error) {
+                document.getElementById('message').innerHTML = `
+                    <div class="error">❌ Errore: ${error.message}</div>
+                `;
+                btn.textContent = originalText;
+                btn.disabled = false;
+            }
+        }
+
+        async function loadClassifica() {
+            try {
+                const response = await fetch('/api-classifica.php');
+                const result = await response.json();
+
+                if (!result.success) {
+                    throw new Error(result.error || 'Errore nel caricamento dei dati');
+                }
+
+                const tbody = document.getElementById('classificaBody');
+                tbody.innerHTML = '';
+
+                if (result.data.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;">Nessun dato disponibile</td></tr>';
+                    return;
+                }
+
+                result.data.forEach(row => {
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td><strong>${row.Posizione}</strong></td>
+                        <td>${row['N. Gara']}</td>
+                        <td><strong>${row.Pilota}</strong></td>
+                        <td>${row.Team}</td>
+                        <td>${row['Best Lap']}</td>
+                        <td>${row['Ultimo Giro']}</td>
+                        <td>${row.Giri}</td>
+                        <td>${row.Gap}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+
+                document.getElementById('message').innerHTML = `
+                    <div class="success">✅ Classifica aggiornata: ${result.count} piloti</div>
+                `;
+                document.getElementById('timestamp').textContent = `Ultimo aggiornamento: ${result.timestamp}`;
+
+            } catch (error) {
+                document.getElementById('message').innerHTML = `
+                    <div class="error">❌ Errore: ${error.message}</div>
+                `;
+                console.error('Errore:', error);
+            }
+        }
+
+        // Carica i dati al caricamento della pagina
+        loadClassifica();
+
+        // Aggiorna ogni 10 secondi
+        setInterval(loadClassifica, 10000);
+    </script>
+</body>
+</html>

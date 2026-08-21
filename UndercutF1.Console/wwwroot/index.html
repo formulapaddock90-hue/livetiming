@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UndercutF1 Dashboard</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0b0f19" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="/dashboard.css" />
+</head>
+<body>
+    <main class="layout">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">Live timing dashboard</p>
+                <h1 id="session-title">UndercutF1</h1>
+                <p id="session-subtitle" class="muted">In attesa dei dati della sessione...</p>
+            </div>
+            <div class="hero-status">
+                <button id="popoutBtn" class="popout-btn" title="Apri in nuova finestra per Multi-Schermo">
+                    🪟 Multi-Schermo
+                </button>
+                <span id="track-status" class="badge neutral">Nessun dato</span>
+                <span id="clock-status" class="badge neutral">Clock sconosciuto</span>
+            </div>
+        </header>
+
+        <section class="cards" aria-label="Riepilogo sessione">
+            <article class="card">
+                <span class="label">Meeting</span>
+                <strong id="meeting-name">-</strong>
+                <span id="circuit-name" class="muted">-</span>
+            </article>
+            <article class="card">
+                <span class="label">Meteo</span>
+                <strong id="air-temp">-</strong>
+                <span id="track-temp" class="muted">-</span>
+            </article>
+            <article class="card">
+                <span class="label">Vento / Umidità</span>
+                <strong id="wind-speed">-</strong>
+                <span id="humidity" class="muted">-</span>
+            </article>
+            <article class="card">
+                <span class="label">Aggiornamento</span>
+                <strong id="updated-at">-</strong>
+                <span id="session-running" class="muted">-</span>
+            </article>
+        </section>
+
+        <div class="dashboard-shell">
+            <aside class="sidebar panel">
+                <div class="panel-heading">
+                    <h2>Classifica live</h2>
+                    <span id="driver-count" class="muted">0 piloti</span>
+                </div>
+                <p id="selection-hint" class="muted compact-hint">Clicca su uno o più piloti per confrontare i tempi giro.</p>
+                <button id="exportBtn" class="export-classifica-btn" title="Esporta classifica su FormulaPaddock">
+                    🏁 Esporta su FormulaPaddock
+                </button>
+                <div id="exportMessage" class="export-message"></div>
+                <div class="table-wrap sidebar-table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Pilota</th>
+                                <th>Gomma</th>
+                                <th>Settori</th>
+                                <th>Gap</th>
+                                <th>Giro / Best</th>
+                            </tr>
+                        </thead>
+                        <tbody id="timing-body">
+                            <tr>
+                                <td colspan="6" class="empty">In attesa dei dati live...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </aside>
+
+            <div class="content-area">
+                <section class="analytics">
+                    <div class="tabs">
+                        <button class="tab-button active" data-tab="gruppo-1">Gruppo 1</button>
+                        <button class="tab-button" data-tab="gruppo-2">Gruppo 2</button>
+                        <button class="tab-button" data-tab="gruppo-3">Gruppo 3</button>
+                        <button class="tab-button" data-tab="mappa-settori">Mappa Settori</button>
+                        <button class="tab-button" data-tab="matrice-stint">Matrice Stint</button>
+                        <button class="tab-button" data-tab="race-control">Race control</button>
+                    </div>
+
+                    <div class="tab-content" id="gruppo-1">
+                        <div class="analytics-grid">
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Tempi giro piloti del gruppo</h2>
+                                    <span id="selected-drivers-g1" class="muted">Tutti i piloti del gruppo</span>
+                                </div>
+                                <div id="lap-time-chart-g1" class="chart empty">In attesa dati tempi giro del gruppo</div>
+                            </section>
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Confronto primo ↔ ultimo giro</h2>
+                                    <span class="muted">Delta e stint</span>
+                                </div>
+                                <div id="lap-stats-table-g1" class="chart empty">Seleziona almeno un pilota</div>
+                            </section>
+                        </div>
+                        <section class="panel sector-ranking-panel">
+                            <div class="panel-heading">
+                                <h2>Classifica migliori giri per settore</h2>
+                                <span class="muted">Gruppo 1</span>
+                            </div>
+                            <div id="sector-ranking-table-g1" class="compound-ranking-table empty">Nessun dato settore disponibile</div>
+                        </section>
+                        <div class="analytics-grid analytics-grid--strategy">
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Stint e mescole</h2>
+                                    <span class="muted">Mappa visiva strategia</span>
+                                </div>
+                                <div id="stint-chart-g1" class="stint-chart empty">Nessun dato disponibile</div>
+                            </section>
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Pit stop</h2>
+                                    <span class="muted">Durata soste</span>
+                                </div>
+                                <div id="pit-table-g1" class="chart empty">Nessun dato disponibile</div>
+                            </section>
+                        </div>
+                        <section class="panel compound-ranking-panel">
+                            <div class="panel-heading">
+                                <h2>Classifica migliori giri per compound</h2>
+                                <span class="muted">Gruppo 1</span>
+                            </div>
+                            <div id="compound-ranking-table-g1" class="compound-ranking-table empty">Nessun dato compound disponibile</div>
+                        </section>
+                        <section class="panel">
+                            <div class="panel-heading">
+                                <h2>Evoluzione posizioni</h2>
+                                <span class="muted">Gruppo 1</span>
+                            </div>
+                            <div id="position-chart-g1" class="chart empty">Nessun dato disponibile</div>
+                        </section>
+                    </div>
+
+                    <div class="tab-content hidden" id="gruppo-2">
+                        <div class="analytics-grid">
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Tempi giro piloti del gruppo</h2>
+                                    <span id="selected-drivers-g2" class="muted">Tutti i piloti del gruppo</span>
+                                </div>
+                                <div id="lap-time-chart-g2" class="chart empty">In attesa dati tempi giro del gruppo</div>
+                            </section>
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Confronto primo ↔ ultimo giro</h2>
+                                    <span class="muted">Delta e stint</span>
+                                </div>
+                                <div id="lap-stats-table-g2" class="chart empty">Seleziona almeno un pilota</div>
+                            </section>
+                        </div>
+                        <section class="panel sector-ranking-panel">
+                            <div class="panel-heading">
+                                <h2>Classifica migliori giri per settore</h2>
+                                <span class="muted">Gruppo 2</span>
+                            </div>
+                            <div id="sector-ranking-table-g2" class="compound-ranking-table empty">Nessun dato settore disponibile</div>
+                        </section>
+                        <div class="analytics-grid analytics-grid--strategy">
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Stint e mescole</h2>
+                                    <span class="muted">Mappa visiva strategia</span>
+                                </div>
+                                <div id="stint-chart-g2" class="stint-chart empty">Nessun dato disponibile</div>
+                            </section>
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Pit stop</h2>
+                                    <span class="muted">Durata soste</span>
+                                </div>
+                                <div id="pit-table-g2" class="chart empty">Nessun dato disponibile</div>
+                            </section>
+                        </div>
+                        <section class="panel compound-ranking-panel">
+                            <div class="panel-heading">
+                                <h2>Classifica migliori giri per compound</h2>
+                                <span class="muted">Gruppo 2</span>
+                            </div>
+                            <div id="compound-ranking-table-g2" class="compound-ranking-table empty">Nessun dato compound disponibile</div>
+                        </section>
+                        <section class="panel">
+                            <div class="panel-heading">
+                                <h2>Evoluzione posizioni</h2>
+                                <span class="muted">Gruppo 2</span>
+                            </div>
+                            <div id="position-chart-g2" class="chart empty">Nessun dato disponibile</div>
+                        </section>
+                    </div>
+
+                    <div class="tab-content hidden" id="gruppo-3">
+                        <div class="analytics-grid">
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Tempi giro piloti del gruppo</h2>
+                                    <span id="selected-drivers-g3" class="muted">Tutti i piloti del gruppo</span>
+                                </div>
+                                <div id="lap-time-chart-g3" class="chart empty">In attesa dati tempi giro del gruppo</div>
+                            </section>
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Confronto primo ↔ ultimo giro</h2>
+                                    <span class="muted">Delta e stint</span>
+                                </div>
+                                <div id="lap-stats-table-g3" class="chart empty">Seleziona almeno un pilota</div>
+                            </section>
+                        </div>
+                        <section class="panel sector-ranking-panel">
+                            <div class="panel-heading">
+                                <h2>Classifica migliori giri per settore</h2>
+                                <span class="muted">Gruppo 3</span>
+                            </div>
+                            <div id="sector-ranking-table-g3" class="compound-ranking-table empty">Nessun dato settore disponibile</div>
+                        </section>
+                        <div class="analytics-grid analytics-grid--strategy">
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Stint e mescole</h2>
+                                    <span class="muted">Mappa visiva strategia</span>
+                                </div>
+                                <div id="stint-chart-g3" class="stint-chart empty">Nessun dato disponibile</div>
+                            </section>
+                            <section class="panel">
+                                <div class="panel-heading">
+                                    <h2>Pit stop</h2>
+                                    <span class="muted">Durata soste</span>
+                                </div>
+                                <div id="pit-table-g3" class="chart empty">Nessun dato disponibile</div>
+                            </section>
+                        </div>
+                        <section class="panel compound-ranking-panel">
+                            <div class="panel-heading">
+                                <h2>Classifica migliori giri per compound</h2>
+                                <span class="muted">Gruppo 3</span>
+                            </div>
+                            <div id="compound-ranking-table-g3" class="compound-ranking-table empty">Nessun dato compound disponibile</div>
+                        </section>
+                        <section class="panel">
+                            <div class="panel-heading">
+                                <h2>Evoluzione posizioni</h2>
+                                <span class="muted">Gruppo 3</span>
+                            </div>
+                            <div id="position-chart-g3" class="chart empty">Nessun dato disponibile</div>
+                        </section>
+                    </div>
+
+                    <div class="tab-content hidden" id="mappa-settori">
+                        <section class="panel">
+                            <div class="panel-heading">
+                                <h2>Mappa di calore dei settori</h2>
+                                <span class="muted">Live Sector Pace Heatmap (S1, S2, S3)</span>
+                            </div>
+                            <div id="sector-heatmap-container" class="sector-heatmap-wrap empty">In attesa dati settori...</div>
+                        </section>
+                    </div>
+
+                    <div class="tab-content hidden" id="matrice-stint">
+                        <section class="panel">
+                            <div class="panel-heading">
+                                <h2>Matrice di confronto stint & gomma</h2>
+                                <span class="muted">Stint & Compound Matrix Analysis</span>
+                            </div>
+                            <div id="stint-matrix-container" class="stint-matrix-wrap empty">In attesa dati stint...</div>
+                        </section>
+                    </div>
+
+                    <div class="tab-content hidden" id="race-control">
+                        <section class="panel">
+                            <div class="panel-heading">
+                                <h2>Race control</h2>
+                                <span id="rc-count" class="muted">Nessun messaggio</span>
+                            </div>
+                            <div id="rc-timeline" class="rc-timeline empty">Nessun messaggio disponibile</div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <div id="lap-alerts" class="lap-alerts" aria-live="polite" aria-atomic="true"></div>
+
+    <div id="driver-modal" class="driver-modal hidden" role="dialog" aria-modal="true" aria-labelledby="driver-modal-title">
+        <div class="driver-modal-backdrop" data-close-driver-modal="true"></div>
+        <section class="driver-modal-content panel">
+            <div class="panel-heading">
+                <h2 id="driver-modal-title">Dettaglio pilota</h2>
+                <button id="driver-modal-close" class="driver-modal-close" type="button" aria-label="Chiudi dettaglio pilota">✕</button>
+            </div>
+            <div id="driver-modal-body" class="driver-modal-body"></div>
+        </section>
+    </div>
+
+    <script src="/dashboard.js" defer></script>
+</body>
+</html>

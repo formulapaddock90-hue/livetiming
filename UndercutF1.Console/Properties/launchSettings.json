@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "UndercutF1.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "--with-api",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:61937"
+    }
+  }
+}

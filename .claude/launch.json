@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "UndercutF1.Console",
+      "runtimeExecutable": "dotnet",
+      "runtimeArgs": ["run", "--project", "UndercutF1.Console/UndercutF1.Console.csproj", "--", "--with-api"],
+      "port": 61937
+    }
+  ]
+}

@@ -1,0 +1,1368 @@
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.deps.json
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.runtimeconfig.json
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ggml-metal.metal
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-base-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-cpu-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-base-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-cpu-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-base-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-cpu-whisper.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libwhisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-base-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-cpu-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-blas-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libwhisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-cpu-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-base-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-blas-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-metal-whisper.dylib
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libwhisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-cpu-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-base-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libwhisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-cpu-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-base-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libwhisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-base-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-cpu-whisper.so
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.staticwebassets.runtime.json
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.staticwebassets.endpoints.json
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.exe
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.exe
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.deps.json
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.runtimeconfig.json
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.pdb
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.xml
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\FFMpegCore.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\HarfBuzzSharp.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Humanizer.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\InhibitSleep.Net.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\InMemoryLogger.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Instances.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Json.More.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonPointer.Net.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonSchema.Net.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonSchema.Net.Generation.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\LiveChartsCore.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\LiveChartsCore.SkiaSharpView.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.Client.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.OpenApi.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Client.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Client.Core.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.AI.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyModel.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.Systemd.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.OpenApi.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.AspNetCore.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Extensions.Hosting.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Extensions.Logging.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Formatting.Compact.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Settings.Configuration.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.Console.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.Debug.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.File.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SharpWebview.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SkiaSharp.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SkiaSharp.HarfBuzz.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Spectre.Console.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.CommandLine.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\TextCopy.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Common.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Extensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Wcwidth.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Whisper.net.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\cs\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\de\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\es\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\fr\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\it\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ja\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ko\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\pl\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\pt-BR\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ru\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\tr\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\zh-Hans\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\zh-Hant\System.CommandLine.resources.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\libHarfBuzzSharp.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\WebView2Loader.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\webview.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\libSkiaSharp.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Native.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.CSharp.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.VisualBasic.Core.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.VisualBasic.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Win32.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Win32.Registry.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.AppContext.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Buffers.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Concurrent.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Immutable.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.NonGeneric.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Specialized.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.Annotations.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.DataAnnotations.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.EventBasedAsync.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.TypeConverter.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Configuration.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Console.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Core.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.Common.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.DataSetExtensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Contracts.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Debug.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.DiagnosticSource.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.FileVersionInfo.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Process.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.StackTrace.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.TextWriterTraceListener.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Tools.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.TraceSource.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Tracing.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Drawing.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Drawing.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Dynamic.Runtime.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Asn1.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Tar.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.Calendars.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.Extensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.Brotli.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.FileSystem.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.ZipFile.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.AccessControl.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.DriveInfo.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.Watcher.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.IsolatedStorage.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.MemoryMappedFiles.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipelines.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipes.AccessControl.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipes.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.UnmanagedMemoryStream.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.AsyncEnumerable.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Expressions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Parallel.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Queryable.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Memory.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Http.Json.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Http.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.HttpListener.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Mail.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.NameResolution.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.NetworkInformation.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Ping.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Quic.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Requests.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Security.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.ServerSentEvents.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.ServicePoint.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Sockets.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebClient.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebHeaderCollection.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebProxy.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebSockets.Client.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebSockets.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Numerics.Vectors.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Numerics.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ObjectModel.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.CoreLib.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.DataContractSerialization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Uri.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Xml.Linq.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Xml.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.DispatchProxy.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.ILGeneration.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.Lightweight.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Extensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Metadata.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.TypeExtensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.Reader.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.ResourceManager.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.Writer.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.CompilerServices.VisualC.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Extensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Handles.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.JavaScript.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Intrinsics.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Loader.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Numerics.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Formatters.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Json.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Xml.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.AccessControl.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Claims.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Algorithms.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Cng.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Csp.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Encoding.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.OpenSsl.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.X509Certificates.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Principal.Windows.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Principal.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.SecureString.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ServiceModel.Web.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ServiceProcess.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.CodePages.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.Extensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encodings.Web.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Json.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.RegularExpressions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.AccessControl.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Channels.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Overlapped.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Dataflow.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Extensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Parallel.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Thread.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.ThreadPool.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Timer.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Transactions.Local.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Transactions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ValueTuple.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Web.HttpUtility.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Web.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Windows.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.Linq.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.ReaderWriter.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.Serialization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XDocument.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XPath.XDocument.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XPath.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XmlDocument.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XmlSerializer.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\WindowsBase.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscorlib.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\netstandard.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Antiforgery.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.BearerToken.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Cookies.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Core.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.OAuth.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authorization.Policy.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authorization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Authorization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Endpoints.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Forms.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Server.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Web.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Connections.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.CookiePolicy.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cors.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.Extensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HostFiltering.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Html.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.Common.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Extensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Features.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Results.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpLogging.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpOverrides.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpsPolicy.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Identity.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Localization.Routing.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Localization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Metadata.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Core.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Cors.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Localization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Razor.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.RazorPages.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.OutputCaching.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.RateLimiting.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Razor.Runtime.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Razor.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.RequestDecompression.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCaching.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCompression.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Rewrite.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Routing.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Routing.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.HttpSys.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.IIS.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.IISIntegration.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Session.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Common.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Core.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.StaticAssets.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.StaticFiles.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.WebSockets.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.WebUtilities.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Caching.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Caching.Memory.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Binder.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.CommandLine.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Ini.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Json.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.KeyPerFile.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.UserSecrets.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Xml.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyInjection.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Features.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Composite.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Physical.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Http.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Identity.Core.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Identity.Stores.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Localization.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Localization.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Abstractions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Configuration.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Console.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Debug.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.EventLog.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.EventSource.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.TraceSource.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.ObjectPool.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.DataAnnotations.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Primitives.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Validation.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.WebEncoders.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.JSInterop.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Net.Http.Headers.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.EventLog.Messages.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.EventLog.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Cbor.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Pkcs.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Xml.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.RateLimiting.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.DiaSymReader.Native.amd64.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.Native.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clretwrc.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrgc.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrgcexp.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrjit.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\coreclr.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\createdump.exe
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\hostfxr.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\hostpolicy.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordaccore.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordaccore_amd64_amd64_10.0.526.15411.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordbi.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscorrc.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\msquic.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\aspnetcorev2_inprocess.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.pdb
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.xml
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.pdb
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.xml
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.csproj.AssemblyReference.cache
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.GeneratedMSBuildEditorConfig.editorconfig
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.AssemblyInfoInputs.cache
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.AssemblyInfo.cs
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.csproj.CoreCompileInputs.cache
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\Undercut.23490880.Up2Date
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\refint\UndercutF1.CodeGenerator.dll
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.xml
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.pdb
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.genruntimeconfig.cache
+F:\undercut-f1-master\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\ref\UndercutF1.CodeGenerator.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ggml-metal.metal
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-base-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-cpu-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-base-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-cpu-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-base-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-cpu-whisper.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libwhisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-base-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-cpu-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-blas-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libwhisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-cpu-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-base-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-blas-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-metal-whisper.dylib
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libwhisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-cpu-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-base-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libwhisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-cpu-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-base-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libwhisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-base-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-cpu-whisper.so
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.deps.json
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.runtimeconfig.json
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.staticwebassets.runtime.json
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.staticwebassets.endpoints.json
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.exe
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.exe
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.deps.json
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.runtimeconfig.json
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.pdb
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.xml
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\FFMpegCore.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\HarfBuzzSharp.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Humanizer.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\InhibitSleep.Net.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\InMemoryLogger.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Instances.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Json.More.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonPointer.Net.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonSchema.Net.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonSchema.Net.Generation.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\LiveChartsCore.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\LiveChartsCore.SkiaSharpView.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.AI.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.Systemd.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.OpenApi.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.AspNetCore.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Extensions.Hosting.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Extensions.Logging.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Formatting.Compact.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Settings.Configuration.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.Console.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.Debug.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.File.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SharpWebview.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SkiaSharp.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SkiaSharp.HarfBuzz.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Spectre.Console.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.CommandLine.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\TextCopy.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Common.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Extensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Wcwidth.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Whisper.net.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\cs\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\de\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\es\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\fr\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\it\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ja\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ko\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\pl\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\pt-BR\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ru\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\tr\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\zh-Hans\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\zh-Hant\System.CommandLine.resources.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\libHarfBuzzSharp.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\WebView2Loader.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\webview.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\libSkiaSharp.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Native.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.CSharp.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.VisualBasic.Core.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.VisualBasic.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Win32.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Win32.Registry.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.AppContext.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Buffers.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Concurrent.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Immutable.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.NonGeneric.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Specialized.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.Annotations.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.DataAnnotations.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.EventBasedAsync.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.TypeConverter.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Configuration.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Console.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Core.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.Common.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.DataSetExtensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Contracts.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Debug.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Process.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.StackTrace.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.TextWriterTraceListener.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Tools.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.TraceSource.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Tracing.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Drawing.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Drawing.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Dynamic.Runtime.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Asn1.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Tar.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.Calendars.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.Extensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.Brotli.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.FileSystem.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.ZipFile.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.AccessControl.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.DriveInfo.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.Watcher.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.IsolatedStorage.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.MemoryMappedFiles.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipelines.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipes.AccessControl.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipes.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.UnmanagedMemoryStream.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.AsyncEnumerable.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Expressions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Parallel.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Queryable.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Memory.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Http.Json.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Http.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.HttpListener.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Mail.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.NameResolution.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.NetworkInformation.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Ping.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Quic.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Requests.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Security.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.ServerSentEvents.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.ServicePoint.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Sockets.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebClient.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebHeaderCollection.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebProxy.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebSockets.Client.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebSockets.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Numerics.Vectors.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Numerics.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ObjectModel.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.CoreLib.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.DataContractSerialization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Uri.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Xml.Linq.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Xml.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.DispatchProxy.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.ILGeneration.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.Lightweight.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Extensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Metadata.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.TypeExtensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.Reader.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.ResourceManager.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.Writer.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.CompilerServices.VisualC.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Extensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Handles.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.JavaScript.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Intrinsics.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Loader.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Numerics.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Formatters.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Json.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Xml.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.AccessControl.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Claims.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Algorithms.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Cng.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Csp.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Encoding.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.OpenSsl.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Principal.Windows.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Principal.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.SecureString.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ServiceModel.Web.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ServiceProcess.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.CodePages.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.Extensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encodings.Web.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Json.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.RegularExpressions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.AccessControl.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Channels.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Overlapped.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Dataflow.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Extensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Parallel.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Thread.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.ThreadPool.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Timer.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Transactions.Local.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Transactions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ValueTuple.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Web.HttpUtility.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Web.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Windows.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.Linq.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.ReaderWriter.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.Serialization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XDocument.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XPath.XDocument.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XPath.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XmlDocument.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XmlSerializer.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\WindowsBase.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscorlib.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\netstandard.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Antiforgery.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.BearerToken.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Cookies.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Core.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.OAuth.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authorization.Policy.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Endpoints.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Server.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.CookiePolicy.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cors.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.Extensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HostFiltering.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Html.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Results.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpLogging.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpOverrides.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpsPolicy.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Identity.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Localization.Routing.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Localization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Cors.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Localization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Razor.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.RazorPages.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.OutputCaching.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.RateLimiting.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Razor.Runtime.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Razor.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.RequestDecompression.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCaching.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCompression.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Rewrite.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Routing.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Routing.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.HttpSys.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.IIS.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.IISIntegration.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Session.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Core.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.StaticAssets.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.StaticFiles.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.WebSockets.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.WebUtilities.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Ini.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.KeyPerFile.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Xml.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Features.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Composite.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Http.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Localization.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Console.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.TraceSource.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.DataAnnotations.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Primitives.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Validation.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.WebEncoders.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.JSInterop.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Net.Http.Headers.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.EventLog.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Cbor.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Pkcs.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Xml.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.RateLimiting.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.Native.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clretwrc.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrgc.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrgcexp.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrjit.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\coreclr.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\createdump.exe
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\hostfxr.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\hostpolicy.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordaccore.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordaccore_amd64_amd64_10.0.526.15411.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordbi.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscorrc.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\msquic.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\aspnetcorev2_inprocess.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.pdb
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.xml
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.pdb
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.xml
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.csproj.AssemblyReference.cache
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.AssemblyInfoInputs.cache
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.AssemblyInfo.cs
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\Undercut.23490880.Up2Date
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\refint\UndercutF1.CodeGenerator.dll
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.xml
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.pdb
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.genruntimeconfig.cache
+C:\Users\Alberto.Gatti\Desktop\Nuova cartella\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\ref\UndercutF1.CodeGenerator.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ggml-metal.metal
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-base-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-arm64\ggml-cpu-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-base-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x64\ggml-cpu-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-base-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\win-x86\ggml-cpu-whisper.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libwhisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-base-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-cpu-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-x64\libggml-blas-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libwhisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-cpu-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-base-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-blas-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\macos-arm64\libggml-metal-whisper.dylib
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libwhisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-cpu-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm64\libggml-base-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libwhisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-cpu-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-x64\libggml-base-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libwhisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-base-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\runtimes\linux-arm\libggml-cpu-whisper.so
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.deps.json
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.runtimeconfig.json
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.staticwebassets.runtime.json
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.staticwebassets.endpoints.json
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.exe
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.exe
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.deps.json
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.runtimeconfig.json
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.pdb
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.xml
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\FFMpegCore.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\HarfBuzzSharp.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Humanizer.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\InhibitSleep.Net.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\InMemoryLogger.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Instances.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Json.More.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonPointer.Net.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonSchema.Net.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\JsonSchema.Net.Generation.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\LiveChartsCore.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\LiveChartsCore.SkiaSharpView.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.Client.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.OpenApi.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Client.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Client.Core.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.AI.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyModel.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.Systemd.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.OpenApi.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.AspNetCore.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Extensions.Hosting.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Extensions.Logging.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Formatting.Compact.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Settings.Configuration.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.Console.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.Debug.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Serilog.Sinks.File.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SharpWebview.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SkiaSharp.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\SkiaSharp.HarfBuzz.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Spectre.Console.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.CommandLine.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\TextCopy.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Common.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Extensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Wcwidth.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Whisper.net.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\cs\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\de\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\es\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\fr\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\it\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ja\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ko\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\pl\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\pt-BR\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\ru\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\tr\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\zh-Hans\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\zh-Hant\System.CommandLine.resources.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\libHarfBuzzSharp.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\WebView2Loader.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\webview.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\libSkiaSharp.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Vezel.Cathode.Native.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.CSharp.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.VisualBasic.Core.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.VisualBasic.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Win32.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Win32.Registry.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.AppContext.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Buffers.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Concurrent.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Immutable.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.NonGeneric.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.Specialized.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Collections.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.Annotations.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.DataAnnotations.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.EventBasedAsync.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.TypeConverter.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ComponentModel.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Configuration.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Console.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Core.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.Common.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.DataSetExtensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Data.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Contracts.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Debug.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.DiagnosticSource.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.FileVersionInfo.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Process.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.StackTrace.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.TextWriterTraceListener.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Tools.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.TraceSource.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.Tracing.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Drawing.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Drawing.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Dynamic.Runtime.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Asn1.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Tar.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.Calendars.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.Extensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Globalization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.Brotli.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.FileSystem.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.ZipFile.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.AccessControl.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.DriveInfo.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.Watcher.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.FileSystem.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.IsolatedStorage.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.MemoryMappedFiles.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipelines.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipes.AccessControl.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Pipes.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.UnmanagedMemoryStream.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.AsyncEnumerable.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Expressions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Parallel.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.Queryable.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Linq.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Memory.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Http.Json.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Http.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.HttpListener.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Mail.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.NameResolution.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.NetworkInformation.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Ping.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Quic.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Requests.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Security.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.ServerSentEvents.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.ServicePoint.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.Sockets.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebClient.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebHeaderCollection.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebProxy.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebSockets.Client.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.WebSockets.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Net.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Numerics.Vectors.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Numerics.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ObjectModel.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.CoreLib.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.DataContractSerialization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Uri.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Xml.Linq.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Private.Xml.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.DispatchProxy.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.ILGeneration.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.Lightweight.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Emit.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Extensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Metadata.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.TypeExtensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Reflection.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.Reader.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.ResourceManager.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Resources.Writer.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.CompilerServices.Unsafe.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.CompilerServices.VisualC.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Extensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Handles.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.JavaScript.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.InteropServices.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Intrinsics.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Loader.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Numerics.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Formatters.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Json.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.Xml.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.Serialization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Runtime.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.AccessControl.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Claims.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Algorithms.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Cng.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Csp.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Encoding.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.OpenSsl.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.X509Certificates.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Principal.Windows.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Principal.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.SecureString.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ServiceModel.Web.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ServiceProcess.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.CodePages.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.Extensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encoding.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Encodings.Web.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.Json.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Text.RegularExpressions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.AccessControl.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Channels.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Overlapped.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Dataflow.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Extensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.Parallel.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Tasks.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Thread.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.ThreadPool.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.Timer.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Transactions.Local.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Transactions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.ValueTuple.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Web.HttpUtility.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Web.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Windows.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.Linq.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.ReaderWriter.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.Serialization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XDocument.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XPath.XDocument.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XPath.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XmlDocument.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.XmlSerializer.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Xml.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\WindowsBase.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscorlib.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\netstandard.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Antiforgery.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.BearerToken.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Cookies.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.Core.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.OAuth.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authentication.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authorization.Policy.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Authorization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Authorization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Endpoints.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Forms.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Server.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.Web.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Components.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Connections.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.CookiePolicy.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cors.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.Extensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.DataProtection.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.HealthChecks.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Diagnostics.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HostFiltering.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Hosting.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Html.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.Common.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Connections.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Extensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Features.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.Results.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Http.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpLogging.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpOverrides.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.HttpsPolicy.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Identity.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Localization.Routing.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Localization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Metadata.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.ApiExplorer.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Core.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Cors.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.DataAnnotations.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Formatters.Xml.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Localization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.Razor.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.RazorPages.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.TagHelpers.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Mvc.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.OutputCaching.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.RateLimiting.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Razor.Runtime.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Razor.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.RequestDecompression.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCaching.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCaching.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.ResponseCompression.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Rewrite.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Routing.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Routing.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.HttpSys.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.IIS.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.IISIntegration.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Core.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.NamedPipes.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.Quic.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Server.Kestrel.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.Session.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Common.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Core.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.SignalR.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.StaticAssets.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.StaticFiles.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.WebSockets.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.WebUtilities.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.AspNetCore.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Caching.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Caching.Memory.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Binder.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.CommandLine.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.FileExtensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Ini.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Json.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.KeyPerFile.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.UserSecrets.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.Xml.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Configuration.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.DependencyInjection.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Diagnostics.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Features.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Composite.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileProviders.Physical.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Hosting.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Http.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Identity.Core.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Identity.Stores.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Localization.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Localization.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Abstractions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Configuration.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Console.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.Debug.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.EventLog.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.EventSource.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.TraceSource.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Logging.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.ObjectPool.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.DataAnnotations.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Options.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Primitives.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.Validation.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Extensions.WebEncoders.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.JSInterop.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.Net.Http.Headers.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.EventLog.Messages.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Diagnostics.EventLog.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Formats.Cbor.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Pkcs.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Security.Cryptography.Xml.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.Threading.RateLimiting.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\Microsoft.DiaSymReader.Native.amd64.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\System.IO.Compression.Native.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clretwrc.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrgc.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrgcexp.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\clrjit.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\coreclr.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\createdump.exe
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\hostfxr.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\hostpolicy.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordaccore.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordbi.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscorrc.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\msquic.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\aspnetcorev2_inprocess.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.pdb
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\undercutf1.xml
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.pdb
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\UndercutF1.Data.xml
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.csproj.AssemblyReference.cache
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.GeneratedMSBuildEditorConfig.editorconfig
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.AssemblyInfoInputs.cache
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.AssemblyInfo.cs
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.csproj.CoreCompileInputs.cache
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\Undercut.23490880.Up2Date
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\refint\UndercutF1.CodeGenerator.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.xml
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.pdb
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.genruntimeconfig.cache
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\ref\UndercutF1.CodeGenerator.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\mscordaccore_amd64_amd64_10.0.1026.32716.dll
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\FluentFTP.dll
+G:\Altri computer\Il mio computer\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.dll
+G:\Altri computer\Il mio computer\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\refint\UndercutF1.CodeGenerator.dll
+G:\Altri computer\Il mio computer\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.xml
+G:\Altri computer\Il mio computer\undercut-f1-master\gen\UndercutF1.CodeGenerator\obj\Debug\net10.0\win-x64\UndercutF1.CodeGenerator.pdb
+F:\undercut-f1-master\gen\UndercutF1.CodeGenerator\bin\Debug\net10.0\win-x64\appsettings.json

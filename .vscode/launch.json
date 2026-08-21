@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach"
+    },
+    {
+      "name": "Launch Main App",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/UndercutF1.Console/bin/Debug/net9.0/undercutf1.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/UndercutF1.Console/",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Output Image",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/UndercutF1.Console/bin/Debug/net9.0/undercutf1.dll",
+      "args": ["image", "${input:filepath}", "${input:protocol}"],
+      "cwd": "${workspaceFolder}/UndercutF1.Console/",
+      "stopAtEntry": false,
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "filepath",
+      "description": "The filepath to load",
+      "type": "promptString"
+    },
+    {
+      "id": "protocol",
+      "description": "The graphics protocol to use",
+      "type": "promptString"
+    }
+  ]
+}

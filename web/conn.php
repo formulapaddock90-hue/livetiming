@@ -1,0 +1,9 @@
+<?php
+$username='Sql1936639';
+$dbname='Sql1936639_4';
+$hostname='31.11.39.212';
+$password='7670i01h35';
+$host_ftp='ftp.formulapaddock.it';
+$user_ftp='4746160@aruba.it';
+$pw_ftp='Gattipc90!';
+$root='classifica';

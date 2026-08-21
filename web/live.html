@@ -1,0 +1,2125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Timing F1 Diretta Telemetria | Formula Paddock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/wp-content/plugins/undercut-f1-standings/assets/dashboard.css?v=13.0">
+    <style>
+        body { background-color: #0b0f19; color: #ffffff; font-family: 'Titillium Web', sans-serif; margin: 0; padding: 20px; }
+        .wrapper { max-width: 1480px; margin: 0 auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; background: #11141e; padding: 16px 24px; border-radius: 10px; border-left: 5px solid #e10600; margin-bottom: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+        .badge-live { background: #22c55e; color: #ffffff; font-weight: 800; padding: 6px 14px; border-radius: 20px; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 20px; }
+        .card { background: #151926; border: 1px solid #282e3f; border-radius: 10px; padding: 16px; min-height: 85px; color: #fff; }
+        .card .label { color: #94a3b8; font-size: 11px; text-transform: uppercase; font-weight: 700; display: block; }
+        .card strong { font-size: 18px; font-weight: 800; display: block; margin-top: 4px; }
+        .main-grid { display: grid; grid-template-columns: 460px 1fr; gap: 20px; }
+        .panel { background: #151926; border: 1px solid #282e3f; border-radius: 12px; padding: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); margin-bottom: 20px; }
+        .panel-title { margin-top:0; text-transform:uppercase; font-size:15px; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:10px; display:flex; justify-content:space-between; align-items:center; }
+        table { width: 100%; border-collapse: collapse; }
+        th { text-align: left; color: #94a3b8; font-size: 11px; text-transform: uppercase; padding: 8px 10px; border-bottom: 1px solid #282e3f; }
+        td { padding: 8px 10px; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 13px; }
+        .team-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+        .driver-cell { display: flex; align-items: center; }
+        .tire-chip { padding: 3px 8px; border-radius: 4px; font-weight: 900; font-size: 11px; text-transform: uppercase; }
+        .tire-chip.SOFT { background: #e10600; color: #fff; }
+        .tire-chip.MEDIUM { background: #ffd166; color: #000; }
+        .tire-chip.HARD { background: #ffffff; color: #000; }
+        .micro-sectors { display: flex; gap: 3px; }
+        .micro-sec { padding: 2px 5px; border-radius: 3px; font-size: 10px; font-weight: 800; }
+        .micro-sec.purp { background: #a855f7; color: #fff; }
+        .micro-sec.p-best { background: #22c55e; color: #fff; }
+        .micro-sec.norm { background: #334155; color: #94a3b8; }
+        .gap-cell { font-weight: 800; color: #f8fafc; }
+        .muted-small { font-size: 11px; color: #94a3b8; }
+        
+        .tabs { display: flex; gap: 8px; margin-bottom: 16px; border-bottom: 1px solid #282e3f; padding-bottom: 10px; }
+        .tab-btn { background: #1a2030; color: #94a3b8; border: 1px solid #282e3f; padding: 10px 18px; border-radius: 6px; font-weight: 800; font-size: 12px; text-transform: uppercase; cursor: pointer; transition: all 0.2s; }
+        .tab-btn:hover { background: #242c42; color: #fff; }
+        .tab-btn.active { background: #e10600; color: #fff; border-color: #e10600; box-shadow: 0 4px 14px rgba(225, 6, 0, 0.4); }
+        
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .scrollable-standings { max-height: 1100px; overflow-y: auto; padding-right: 4px; }
+        .scrollable-standings::-webkit-scrollbar { width: 6px; }
+        .scrollable-standings::-webkit-scrollbar-thumb { background: #282e3f; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div>
+                <h1 style="margin:0; font-size:22px; text-transform:uppercase;">F1 Live Timing & Telemetria</h1>
+                <span style="color:#94a3b8; font-size:12px;">Gran Premio - Live Timing (Giro 70/70)</span>
+            </div>
+            <div>
+                <span class="badge-live">🟢 LIVE ON AIR</span>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="card"><span class="label">Meeting</span><strong>Gran Premio - Live Timing (Giro 70/70)</strong><span style="color:#cbd5e1; font-size:12px;">F1 Circuit</span></div>
+            <div class="card"><span class="label">Meteo</span><strong>24 °C</strong><span style="color:#cbd5e1; font-size:12px;">Pista 32 °C</span></div>
+            <div class="card"><span class="label">Vento / Umidità</span><strong>1.2 m/s</strong><span style="color:#cbd5e1; font-size:12px;">Umidità 45%</span></div>
+            <div class="card"><span class="label">Ultimo Aggiornamento</span><strong id="ts-box">16:21:21</strong><span style="color:#22c55e; font-size:12px;">Sessione attiva</span></div>
+        </div>
+
+        <div class="main-grid">
+            <div class="panel">
+                <h3 class="panel-title">Classifica Live <span style="background:#e10600; color:#fff; padding:2px 8px; border-radius:10px; font-size:11px;">22 Piloti</span></h3>
+                <div class="scrollable-standings">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Pilota</th>
+                                <th>Gomma</th>
+                                <th>Settori</th>
+                                <th>Gap</th>
+                                <th>Giro / Best</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>1</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#FF8000"></span>
+                    <div class="driver-name"><strong>NOR</strong> <small style="color:#94a3b8; font-size:10px;">McLaren</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">Leader</td>
+            <td class="lap-times-compact">
+                <div>1:23.625</div>
+                <div class="muted-small">B: 1:22.491</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>2</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#3671C6"></span>
+                    <div class="driver-name"><strong>VER</strong> <small style="color:#94a3b8; font-size:10px;">Red Bull Racing</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+15.080</td>
+            <td class="lap-times-compact">
+                <div>1:24.220</div>
+                <div class="muted-small">B: 1:23.433</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>3</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#27F4D2"></span>
+                    <div class="driver-name"><strong>ANT</strong> <small style="color:#94a3b8; font-size:10px;">Mercedes</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip HARD">H <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+18.728</td>
+            <td class="lap-times-compact">
+                <div>1:23.472</div>
+                <div class="muted-small">B: 1:22.415</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>4</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#E80020"></span>
+                    <div class="driver-name"><strong>LEC</strong> <small style="color:#94a3b8; font-size:10px;">Ferrari</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+23.840</td>
+            <td class="lap-times-compact">
+                <div>1:23.098</div>
+                <div class="muted-small">B: 1:22.000</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>5</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#E80020"></span>
+                    <div class="driver-name"><strong>HAM</strong> <small style="color:#94a3b8; font-size:10px;">Ferrari</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+24.540</td>
+            <td class="lap-times-compact">
+                <div>1:23.030</div>
+                <div class="muted-small">B: 1:22.300</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>6</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#3671C6"></span>
+                    <div class="driver-name"><strong>HAD</strong> <small style="color:#94a3b8; font-size:10px;">Red Bull Racing</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip HARD">H <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+55.488</td>
+            <td class="lap-times-compact">
+                <div>1:24.122</div>
+                <div class="muted-small">B: 1:23.218</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>7</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#27F4D2"></span>
+                    <div class="driver-name"><strong>RUS</strong> <small style="color:#94a3b8; font-size:10px;">Mercedes</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip HARD">H <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+57.503</td>
+            <td class="lap-times-compact">
+                <div>1:23.759</div>
+                <div class="muted-small">B: 1:22.589</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>8</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#6692FF"></span>
+                    <div class="driver-name"><strong>LAW</strong> <small style="color:#94a3b8; font-size:10px;">Racing Bulls</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+1 Lap</td>
+            <td class="lap-times-compact">
+                <div>1:24.673</div>
+                <div class="muted-small">B: 1:23.900</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>9</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#52E252"></span>
+                    <div class="driver-name"><strong>HUL</strong> <small style="color:#94a3b8; font-size:10px;">Sauber</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+1 Lap</td>
+            <td class="lap-times-compact">
+                <div>1:25.299</div>
+                <div class="muted-small">B: 1:23.964</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>10</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#6692FF"></span>
+                    <div class="driver-name"><strong>LIN</strong> <small style="color:#94a3b8; font-size:10px;">Racing Bulls</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip HARD">H <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+1 Lap</td>
+            <td class="lap-times-compact">
+                <div>1:28.836</div>
+                <div class="muted-small">B: 1:25.931</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>11</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#229971"></span>
+                    <div class="driver-name"><strong>STR</strong> <small style="color:#94a3b8; font-size:10px;">Aston Martin</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip MEDIUM">M <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+1 Lap</td>
+            <td class="lap-times-compact">
+                <div>1:25.412</div>
+                <div class="muted-small">B: 1:24.110</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>12</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#229971"></span>
+                    <div class="driver-name"><strong>ALO</strong> <small style="color:#94a3b8; font-size:10px;">Aston Martin</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip MEDIUM">M <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+1 Lap</td>
+            <td class="lap-times-compact">
+                <div>1:25.610</div>
+                <div class="muted-small">B: 1:24.220</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>13</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#00A0DE"></span>
+                    <div class="driver-name"><strong>COL</strong> <small style="color:#94a3b8; font-size:10px;">Williams</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip HARD">H <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+2 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:26.100</div>
+                <div class="muted-small">B: 1:24.500</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>14</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#FF8700"></span>
+                    <div class="driver-name"><strong>OCO</strong> <small style="color:#94a3b8; font-size:10px;">Alpine</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip MEDIUM">M <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+2 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:26.330</div>
+                <div class="muted-small">B: 1:24.620</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>15</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#00A0DE"></span>
+                    <div class="driver-name"><strong>ALB</strong> <small style="color:#94a3b8; font-size:10px;">Williams</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+2 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:26.540</div>
+                <div class="muted-small">B: 1:24.810</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>16</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#00A0DE"></span>
+                    <div class="driver-name"><strong>SAI</strong> <small style="color:#94a3b8; font-size:10px;">Williams</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip HARD">H <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+2 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:26.710</div>
+                <div class="muted-small">B: 1:24.950</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>17</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#B6BABD"></span>
+                    <div class="driver-name"><strong>BEA</strong> <small style="color:#94a3b8; font-size:10px;">Haas</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip MEDIUM">M <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+2 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:26.900</div>
+                <div class="muted-small">B: 1:25.100</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>18</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#FF8700"></span>
+                    <div class="driver-name"><strong>GAS</strong> <small style="color:#94a3b8; font-size:10px;">Alpine</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+2 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:27.100</div>
+                <div class="muted-small">B: 1:25.320</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>19</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#52E252"></span>
+                    <div class="driver-name"><strong>BOR</strong> <small style="color:#94a3b8; font-size:10px;">Sauber</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip MEDIUM">M <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+3 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:27.400</div>
+                <div class="muted-small">B: 1:25.680</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>20</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#e10600"></span>
+                    <div class="driver-name"><strong>PER</strong> <small style="color:#94a3b8; font-size:10px;">Cadillac</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip HARD">H <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+3 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:28.100</div>
+                <div class="muted-small">B: 1:26.100</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>21</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#e10600"></span>
+                    <div class="driver-name"><strong>BOT</strong> <small style="color:#94a3b8; font-size:10px;">Cadillac</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip MEDIUM">M <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+3 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:28.500</div>
+                <div class="muted-small">B: 1:26.450</div>
+            </td>
+        </tr>
+        
+        <tr class="driver-row">
+            <td class="pos-cell"><strong>22</strong></td>
+            <td>
+                <div class="driver-cell">
+                    <span class="team-dot" style="background:#3671C6"></span>
+                    <div class="driver-name"><strong>TSU</strong> <small style="color:#94a3b8; font-size:10px;">Red Bull Racing</small></div>
+                </div>
+            </td>
+            <td><span class="tire-chip SOFT">S <small>3L</small></span></td>
+            <td>
+                <div class="micro-sectors">
+                    <span class="micro-sec purp">S1</span>
+                    <span class="micro-sec p-best">S2</span>
+                    <span class="micro-sec norm">S3</span>
+                </div>
+            </td>
+            <td class="gap-cell">+4 Laps</td>
+            <td class="lap-times-compact">
+                <div>1:29.200</div>
+                <div class="muted-small">B: 1:26.900</div>
+            </td>
+        </tr>
+        
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="tab-g1">Gruppo 1</button>
+                    <button class="tab-btn" data-tab="tab-g2">Gruppo 2</button>
+                    <button class="tab-btn" data-tab="tab-g3">Gruppo 3</button>
+                    <button class="tab-btn" data-tab="tab-compound-matrix">Miglior Tempo x Compound</button>
+                    <button class="tab-btn" data-tab="tab-stints">Matrice Stint</button>
+                    <button class="tab-btn" data-tab="tab-rc">Race Control</button>
+                </div>
+
+                <!-- TAB 1: GRUPPO 1 -->
+                <div id="tab-g1" class="tab-content active">
+                    
+    <div>
+        <div class="driver-toggles" data-group="g1" style="display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap;">
+        <label class="toggle-btn active" style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g1" data-drv="NOR" checked style="accent-color:#FF8000; cursor:pointer;" />
+            <span class="legend-dot" style="background:#FF8000; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">NOR</span>
+        </label>
+        
+        <label class="toggle-btn active" style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g1" data-drv="VER" checked style="accent-color:#3671C6; cursor:pointer;" />
+            <span class="legend-dot" style="background:#3671C6; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">VER</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g1" data-drv="ANT"  style="accent-color:#27F4D2; cursor:pointer;" />
+            <span class="legend-dot" style="background:#27F4D2; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">ANT</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g1" data-drv="LEC"  style="accent-color:#E80020; cursor:pointer;" />
+            <span class="legend-dot" style="background:#E80020; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">LEC</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g1" data-drv="HAM"  style="accent-color:#E80020; cursor:pointer;" />
+            <span class="legend-dot" style="background:#E80020; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">HAM</span>
+        </label>
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+            
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⚡ Velocità Max (km/h)</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-NOR" data-drv="NOR" stroke="#FF8000" stroke-width="2.2" points="25.0,27.3 40.4,30.0 55.8,32.8 71.2,35.5 86.7,38.3 102.1,41.0 117.5,43.8 132.9,46.5 148.3,108.9 163.8,107.0 179.2,105.2 194.6,103.4 210.0,38.8 225.4,35.5 240.8,32.3 256.2,29.1 271.7,25.9 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-VER" data-drv="VER" stroke="#3671C6" stroke-width="2.2" points="25.0,29.6 40.4,32.3 55.8,35.1 71.2,37.8 86.7,40.6 102.1,43.3 117.5,46.1 132.9,48.8 148.3,111.2 163.8,109.3 179.2,107.5 194.6,105.7 210.0,41.0 225.4,37.8 240.8,34.6 256.2,31.4 271.7,28.2 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-ANT" data-drv="ANT" stroke="#27F4D2" stroke-width="2.2" points="25.0,31.9 40.4,34.6 55.8,37.4 71.2,40.1 86.7,42.9 102.1,45.6 117.5,48.4 132.9,51.1 148.3,113.5 163.8,111.6 179.2,109.8 194.6,108.0 210.0,43.3 225.4,40.1 240.8,36.9 256.2,33.7 271.7,30.5 287.1,27.3 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-LEC" data-drv="LEC" stroke="#E80020" stroke-width="2.2" points="25.0,34.2 40.4,36.9 55.8,39.7 71.2,42.4 86.7,45.2 102.1,47.9 117.5,50.7 132.9,53.4 148.3,115.8 163.8,113.9 179.2,112.1 194.6,110.3 210.0,45.6 225.4,42.4 240.8,39.2 256.2,36.0 271.7,32.8 287.1,29.6 302.5,26.4 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-HAM" data-drv="HAM" stroke="#E80020" stroke-width="2.2" points="25.0,36.5 40.4,39.2 55.8,42.0 71.2,44.7 86.7,47.5 102.1,50.2 117.5,53.0 132.9,55.7 148.3,118.0 163.8,116.2 179.2,114.4 194.6,112.5 210.0,47.9 225.4,44.7 240.8,41.5 256.2,38.3 271.7,35.1 287.1,31.9 302.5,28.7 317.9,25.5 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">🦶 Acceleratore (%) & Freno</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-NOR" data-drv="NOR" stroke="#FF8000" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-VER" data-drv="VER" stroke="#3671C6" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-ANT" data-drv="ANT" stroke="#27F4D2" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-LEC" data-drv="LEC" stroke="#E80020" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-HAM" data-drv="HAM" stroke="#E80020" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⚙️ Marce (1-8) & RPM</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-NOR" data-drv="NOR" stroke="#FF8000" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-VER" data-drv="VER" stroke="#3671C6" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-ANT" data-drv="ANT" stroke="#27F4D2" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-LEC" data-drv="LEC" stroke="#E80020" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-HAM" data-drv="HAM" stroke="#E80020" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⏱️ Pace Tempi Giro (Giri 2-15)</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-NOR" data-drv="NOR" stroke="#FF8000" stroke-width="2.2" points="25.0,116.7 40.4,107.5 55.8,116.7 71.2,116.7 86.7,107.5 102.1,116.7 117.5,116.7 132.9,107.5 148.3,116.7 163.8,116.7 179.2,107.5 194.6,116.7 210.0,116.7 225.4,107.5 240.8,116.7 256.2,116.7 271.7,107.5 287.1,116.7 302.5,116.7 317.9,107.5 333.3,116.7 348.8,116.7 364.2,107.5 379.6,116.7 395.0,116.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-VER" data-drv="VER" stroke="#3671C6" stroke-width="2.2" points="25.0,109.3 40.4,100.2 55.8,109.3 71.2,109.3 86.7,100.2 102.1,109.3 117.5,109.3 132.9,100.2 148.3,109.3 163.8,109.3 179.2,100.2 194.6,109.3 210.0,109.3 225.4,100.2 240.8,109.3 256.2,109.3 271.7,100.2 287.1,109.3 302.5,109.3 317.9,100.2 333.3,109.3 348.8,109.3 364.2,100.2 379.6,109.3 395.0,109.3" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-ANT" data-drv="ANT" stroke="#27F4D2" stroke-width="2.2" points="25.0,102.0 40.4,92.8 55.8,102.0 71.2,102.0 86.7,92.8 102.1,102.0 117.5,102.0 132.9,92.8 148.3,102.0 163.8,102.0 179.2,92.8 194.6,102.0 210.0,102.0 225.4,92.8 240.8,102.0 256.2,102.0 271.7,92.8 287.1,102.0 302.5,102.0 317.9,92.8 333.3,102.0 348.8,102.0 364.2,92.8 379.6,102.0 395.0,102.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-LEC" data-drv="LEC" stroke="#E80020" stroke-width="2.2" points="25.0,94.7 40.4,85.5 55.8,94.7 71.2,94.7 86.7,85.5 102.1,94.7 117.5,94.7 132.9,85.5 148.3,94.7 163.8,94.7 179.2,85.5 194.6,94.7 210.0,94.7 225.4,85.5 240.8,94.7 256.2,94.7 271.7,85.5 287.1,94.7 302.5,94.7 317.9,85.5 333.3,94.7 348.8,94.7 364.2,85.5 379.6,94.7 395.0,94.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-HAM" data-drv="HAM" stroke="#E80020" stroke-width="2.2" points="25.0,87.3 40.4,78.2 55.8,87.3 71.2,87.3 86.7,78.2 102.1,87.3 117.5,87.3 132.9,78.2 148.3,87.3 163.8,87.3 179.2,78.2 194.6,87.3 210.0,87.3 225.4,78.2 240.8,87.3 256.2,87.3 271.7,78.2 287.1,87.3 302.5,87.3 317.9,78.2 333.3,87.3 348.8,87.3 364.2,78.2 379.6,87.3 395.0,87.3" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        </div>
+        
+    <div class="panel" style="margin-top:16px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:6px; display:flex; justify-content:space-between;">
+            ⏱️ CONFRONTO SETTORI & GIRO IDEALE (GRUPPO 1)
+            <small style="color:#38bdf8; font-weight:800;">Giro Ideale: 1:81.000</small>
+        </h4>
+        <table>
+            <thead>
+                <tr><th>Pilota</th><th>Settore 1 (S1)</th><th>Settore 2 (S2)</th><th>Settore 3 (S3)</th><th>Giro Ideale</th></tr>
+            </thead>
+            <tbody>
+                
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#FF8000">NOR</strong></td>
+            <td style="padding:6px;">27.100 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;">30.000 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">23.900 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:81.000</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#3671C6">VER</strong></td>
+            <td style="padding:6px;">27.180 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">30.110 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;">23.950 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:81.240</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#27F4D2">ANT</strong></td>
+            <td style="padding:6px;">27.260 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">30.220 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.000 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:81.480</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#E80020">LEC</strong></td>
+            <td style="padding:6px;">27.340 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">30.330 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.050 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:81.720</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#E80020">HAM</strong></td>
+            <td style="padding:6px;">27.420 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">30.440 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.100 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:81.960</strong></td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+        
+    <div class="panel" style="margin-top:16px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:6px;">
+            🏎️ CONFRONTO COMPOUND & DEGRADO GOMME (GRUPPO 1)
+        </h4>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px;">
+            <div style="background:#0b0f19; border:1px solid #e10600; border-radius:8px; padding:12px;">
+                <strong style="color:#e10600; font-size:12.5px; display:block;">🔴 SOFT (C5)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:22.845</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.085s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>18 Giri</strong></div>
+            </div>
+            <div style="background:#0b0f19; border:1px solid #ffd166; border-radius:8px; padding:12px;">
+                <strong style="color:#ffd166; font-size:12.5px; display:block;">🟡 MEDIUM (C3)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:23.410</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.045s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>32 Giri</strong></div>
+            </div>
+            <div style="background:#0b0f19; border:1px solid #ffffff; border-radius:8px; padding:12px;">
+                <strong style="color:#ffffff; font-size:12.5px; display:block;">⚪ HARD (C2)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:23.980</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.020s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>45 Giri</strong></div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    
+                </div>
+
+                <!-- TAB 2: GRUPPO 2 -->
+                <div id="tab-g2" class="tab-content">
+                    
+    <div>
+        <div class="driver-toggles" data-group="g2" style="display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap;">
+        <label class="toggle-btn active" style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g2" data-drv="HAD" checked style="accent-color:#3671C6; cursor:pointer;" />
+            <span class="legend-dot" style="background:#3671C6; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">HAD</span>
+        </label>
+        
+        <label class="toggle-btn active" style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g2" data-drv="RUS" checked style="accent-color:#27F4D2; cursor:pointer;" />
+            <span class="legend-dot" style="background:#27F4D2; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">RUS</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g2" data-drv="LAW"  style="accent-color:#6692FF; cursor:pointer;" />
+            <span class="legend-dot" style="background:#6692FF; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">LAW</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g2" data-drv="HUL"  style="accent-color:#52E252; cursor:pointer;" />
+            <span class="legend-dot" style="background:#52E252; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">HUL</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g2" data-drv="LIN"  style="accent-color:#6692FF; cursor:pointer;" />
+            <span class="legend-dot" style="background:#6692FF; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">LIN</span>
+        </label>
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+            
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⚡ Velocità Max (km/h)</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-HAD" data-drv="HAD" stroke="#3671C6" stroke-width="2.2" points="25.0,30.0 40.4,32.8 55.8,35.5 71.2,38.3 86.7,41.0 102.1,43.8 117.5,46.5 132.9,49.3 148.3,111.6 163.8,109.8 179.2,108.0 194.6,106.1 210.0,41.5 225.4,38.3 240.8,35.1 256.2,31.9 271.7,28.7 287.1,25.5 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-RUS" data-drv="RUS" stroke="#27F4D2" stroke-width="2.2" points="25.0,32.3 40.4,35.1 55.8,37.8 71.2,40.6 86.7,43.3 102.1,46.1 117.5,48.8 132.9,51.6 148.3,113.9 163.8,112.1 179.2,110.3 194.6,108.4 210.0,43.8 225.4,40.6 240.8,37.4 256.2,34.2 271.7,31.0 287.1,27.8 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-LAW" data-drv="LAW" stroke="#6692FF" stroke-width="2.2" points="25.0,34.6 40.4,37.4 55.8,40.1 71.2,42.9 86.7,45.6 102.1,48.4 117.5,51.1 132.9,53.9 148.3,116.2 163.8,114.4 179.2,112.5 194.6,110.7 210.0,46.1 225.4,42.9 240.8,39.7 256.2,36.5 271.7,33.3 287.1,30.0 302.5,26.8 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-HUL" data-drv="HUL" stroke="#52E252" stroke-width="2.2" points="25.0,36.9 40.4,39.7 55.8,42.4 71.2,45.2 86.7,47.9 102.1,50.7 117.5,53.4 132.9,56.2 148.3,118.5 163.8,116.7 179.2,114.8 194.6,113.0 210.0,48.4 225.4,45.2 240.8,42.0 256.2,38.8 271.7,35.5 287.1,32.3 302.5,29.1 317.9,25.9 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-LIN" data-drv="LIN" stroke="#6692FF" stroke-width="2.2" points="25.0,39.2 40.4,42.0 55.8,44.7 71.2,47.5 86.7,50.2 102.1,53.0 117.5,55.7 132.9,58.5 148.3,120.8 163.8,119.0 179.2,117.1 194.6,115.3 210.0,50.7 225.4,47.5 240.8,44.3 256.2,41.0 271.7,37.8 287.1,34.6 302.5,31.4 317.9,28.2 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">🦶 Acceleratore (%) & Freno</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-HAD" data-drv="HAD" stroke="#3671C6" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-RUS" data-drv="RUS" stroke="#27F4D2" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-LAW" data-drv="LAW" stroke="#6692FF" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-HUL" data-drv="HUL" stroke="#52E252" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-LIN" data-drv="LIN" stroke="#6692FF" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⚙️ Marce (1-8) & RPM</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-HAD" data-drv="HAD" stroke="#3671C6" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-RUS" data-drv="RUS" stroke="#27F4D2" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-LAW" data-drv="LAW" stroke="#6692FF" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-HUL" data-drv="HUL" stroke="#52E252" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-LIN" data-drv="LIN" stroke="#6692FF" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⏱️ Pace Tempi Giro (Giri 2-15)</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-HAD" data-drv="HAD" stroke="#3671C6" stroke-width="2.2" points="25.0,94.7 40.4,85.5 55.8,94.7 71.2,94.7 86.7,85.5 102.1,94.7 117.5,94.7 132.9,85.5 148.3,94.7 163.8,94.7 179.2,85.5 194.6,94.7 210.0,94.7 225.4,85.5 240.8,94.7 256.2,94.7 271.7,85.5 287.1,94.7 302.5,94.7 317.9,85.5 333.3,94.7 348.8,94.7 364.2,85.5 379.6,94.7 395.0,94.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-RUS" data-drv="RUS" stroke="#27F4D2" stroke-width="2.2" points="25.0,87.3 40.4,78.2 55.8,87.3 71.2,87.3 86.7,78.2 102.1,87.3 117.5,87.3 132.9,78.2 148.3,87.3 163.8,87.3 179.2,78.2 194.6,87.3 210.0,87.3 225.4,78.2 240.8,87.3 256.2,87.3 271.7,78.2 287.1,87.3 302.5,87.3 317.9,78.2 333.3,87.3 348.8,87.3 364.2,78.2 379.6,87.3 395.0,87.3" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-LAW" data-drv="LAW" stroke="#6692FF" stroke-width="2.2" points="25.0,80.0 40.4,70.8 55.8,80.0 71.2,80.0 86.7,70.8 102.1,80.0 117.5,80.0 132.9,70.8 148.3,80.0 163.8,80.0 179.2,70.8 194.6,80.0 210.0,80.0 225.4,70.8 240.8,80.0 256.2,80.0 271.7,70.8 287.1,80.0 302.5,80.0 317.9,70.8 333.3,80.0 348.8,80.0 364.2,70.8 379.6,80.0 395.0,80.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-HUL" data-drv="HUL" stroke="#52E252" stroke-width="2.2" points="25.0,72.7 40.4,63.5 55.8,72.7 71.2,72.7 86.7,63.5 102.1,72.7 117.5,72.7 132.9,63.5 148.3,72.7 163.8,72.7 179.2,63.5 194.6,72.7 210.0,72.7 225.4,63.5 240.8,72.7 256.2,72.7 271.7,63.5 287.1,72.7 302.5,72.7 317.9,63.5 333.3,72.7 348.8,72.7 364.2,63.5 379.6,72.7 395.0,72.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-LIN" data-drv="LIN" stroke="#6692FF" stroke-width="2.2" points="25.0,65.3 40.4,56.2 55.8,65.3 71.2,65.3 86.7,56.2 102.1,65.3 117.5,65.3 132.9,56.2 148.3,65.3 163.8,65.3 179.2,56.2 194.6,65.3 210.0,65.3 225.4,56.2 240.8,65.3 256.2,65.3 271.7,56.2 287.1,65.3 302.5,65.3 317.9,56.2 333.3,65.3 348.8,65.3 364.2,56.2 379.6,65.3 395.0,65.3" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        </div>
+        
+    <div class="panel" style="margin-top:16px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:6px; display:flex; justify-content:space-between;">
+            ⏱️ CONFRONTO SETTORI & GIRO IDEALE (GRUPPO 2)
+            <small style="color:#38bdf8; font-weight:800;">Giro Ideale: 1:82.500</small>
+        </h4>
+        <table>
+            <thead>
+                <tr><th>Pilota</th><th>Settore 1 (S1)</th><th>Settore 2 (S2)</th><th>Settore 3 (S3)</th><th>Giro Ideale</th></tr>
+            </thead>
+            <tbody>
+                
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#3671C6">HAD</strong></td>
+            <td style="padding:6px;">27.400 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;">30.450 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.050 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:82.500</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#27F4D2">RUS</strong></td>
+            <td style="padding:6px;">27.480 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">30.560 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;">24.100 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:82.740</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#6692FF">LAW</strong></td>
+            <td style="padding:6px;">27.560 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">30.670 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.150 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:82.980</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#52E252">HUL</strong></td>
+            <td style="padding:6px;">27.640 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">30.780 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.200 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:83.220</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#6692FF">LIN</strong></td>
+            <td style="padding:6px;">27.720 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">30.890 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.250 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:83.460</strong></td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+        
+    <div class="panel" style="margin-top:16px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:6px;">
+            🏎️ CONFRONTO COMPOUND & DEGRADO GOMME (GRUPPO 2)
+        </h4>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px;">
+            <div style="background:#0b0f19; border:1px solid #e10600; border-radius:8px; padding:12px;">
+                <strong style="color:#e10600; font-size:12.5px; display:block;">🔴 SOFT (C5)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:23.445</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.085s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>18 Giri</strong></div>
+            </div>
+            <div style="background:#0b0f19; border:1px solid #ffd166; border-radius:8px; padding:12px;">
+                <strong style="color:#ffd166; font-size:12.5px; display:block;">🟡 MEDIUM (C3)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:24.010</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.045s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>32 Giri</strong></div>
+            </div>
+            <div style="background:#0b0f19; border:1px solid #ffffff; border-radius:8px; padding:12px;">
+                <strong style="color:#ffffff; font-size:12.5px; display:block;">⚪ HARD (C2)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:24.580</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.020s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>45 Giri</strong></div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    
+                </div>
+
+                <!-- TAB 3: GRUPPO 3 -->
+                <div id="tab-g3" class="tab-content">
+                    
+    <div>
+        <div class="driver-toggles" data-group="g3" style="display:flex; gap:10px; margin-bottom:14px; flex-wrap:wrap;">
+        <label class="toggle-btn active" style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g3" data-drv="STR" checked style="accent-color:#229971; cursor:pointer;" />
+            <span class="legend-dot" style="background:#229971; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">STR</span>
+        </label>
+        
+        <label class="toggle-btn active" style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g3" data-drv="ALO" checked style="accent-color:#229971; cursor:pointer;" />
+            <span class="legend-dot" style="background:#229971; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">ALO</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g3" data-drv="COL"  style="accent-color:#00A0DE; cursor:pointer;" />
+            <span class="legend-dot" style="background:#00A0DE; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">COL</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g3" data-drv="OCO"  style="accent-color:#FF8700; cursor:pointer;" />
+            <span class="legend-dot" style="background:#FF8700; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">OCO</span>
+        </label>
+        
+        <label class="toggle-btn " style="background:#1a2030; border:1px solid #282e3f; padding:5px 12px; border-radius:6px; font-size:12px; font-weight:800; cursor:pointer; display:flex; align-items:center; gap:6px;">
+            <input type="checkbox" class="drv-toggle" data-group="g3" data-drv="ALB"  style="accent-color:#00A0DE; cursor:pointer;" />
+            <span class="legend-dot" style="background:#00A0DE; width:10px; height:10px; border-radius:50%; display:inline-block;"></span>
+            <span style="color:#fff;">ALB</span>
+        </label>
+        </div>
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+            
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⚡ Velocità Max (km/h)</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-STR" data-drv="STR" stroke="#229971" stroke-width="2.2" points="25.0,32.8 40.4,35.5 55.8,38.3 71.2,41.0 86.7,43.8 102.1,46.5 117.5,49.3 132.9,52.0 148.3,114.4 163.8,112.5 179.2,110.7 194.6,108.9 210.0,44.3 225.4,41.0 240.8,37.8 256.2,34.6 271.7,31.4 287.1,28.2 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-ALO" data-drv="ALO" stroke="#229971" stroke-width="2.2" points="25.0,35.1 40.4,37.8 55.8,40.6 71.2,43.3 86.7,46.1 102.1,48.8 117.5,51.6 132.9,54.3 148.3,116.7 163.8,114.8 179.2,113.0 194.6,111.2 210.0,46.5 225.4,43.3 240.8,40.1 256.2,36.9 271.7,33.7 287.1,30.5 302.5,27.3 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-COL" data-drv="COL" stroke="#00A0DE" stroke-width="2.2" points="25.0,37.4 40.4,40.1 55.8,42.9 71.2,45.6 86.7,48.4 102.1,51.1 117.5,53.9 132.9,56.6 148.3,119.0 163.8,117.1 179.2,115.3 194.6,113.5 210.0,48.8 225.4,45.6 240.8,42.4 256.2,39.2 271.7,36.0 287.1,32.8 302.5,29.6 317.9,26.4 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-OCO" data-drv="OCO" stroke="#FF8700" stroke-width="2.2" points="25.0,39.7 40.4,42.4 55.8,45.2 71.2,47.9 86.7,50.7 102.1,53.4 117.5,56.2 132.9,58.9 148.3,121.3 163.8,119.4 179.2,117.6 194.6,115.8 210.0,51.1 225.4,47.9 240.8,44.7 256.2,41.5 271.7,38.3 287.1,35.1 302.5,31.9 317.9,28.7 333.3,25.5 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-ALB" data-drv="ALB" stroke="#00A0DE" stroke-width="2.2" points="25.0,42.0 40.4,44.7 55.8,47.5 71.2,50.2 86.7,53.0 102.1,55.7 117.5,58.5 132.9,61.2 148.3,123.5 163.8,121.7 179.2,119.9 194.6,118.0 210.0,53.4 225.4,50.2 240.8,47.0 256.2,43.8 271.7,40.6 287.1,37.4 302.5,34.2 317.9,31.0 333.3,27.8 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">🦶 Acceleratore (%) & Freno</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-STR" data-drv="STR" stroke="#229971" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-ALO" data-drv="ALO" stroke="#229971" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-COL" data-drv="COL" stroke="#00A0DE" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-OCO" data-drv="OCO" stroke="#FF8700" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-ALB" data-drv="ALB" stroke="#00A0DE" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,102.0 163.8,135.0 179.2,102.0 194.6,25.0 210.0,25.0 225.4,25.0 240.8,25.0 256.2,25.0 271.7,25.0 287.1,25.0 302.5,25.0 317.9,25.0 333.3,25.0 348.8,25.0 364.2,25.0 379.6,25.0 395.0,25.0" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⚙️ Marce (1-8) & RPM</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-STR" data-drv="STR" stroke="#229971" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-ALO" data-drv="ALO" stroke="#229971" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-COL" data-drv="COL" stroke="#00A0DE" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-OCO" data-drv="OCO" stroke="#FF8700" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-ALB" data-drv="ALB" stroke="#00A0DE" stroke-width="2.2" points="25.0,25.0 40.4,25.0 55.8,25.0 71.2,25.0 86.7,25.0 102.1,25.0 117.5,25.0 132.9,25.0 148.3,103.6 163.8,103.6 179.2,40.7 194.6,40.7 210.0,40.7 225.4,40.7 240.8,40.7 256.2,40.7 271.7,40.7 287.1,40.7 302.5,40.7 317.9,40.7 333.3,40.7 348.8,40.7 364.2,40.7 379.6,40.7 395.0,40.7" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        <div class="panel" style="padding:12px; margin-bottom:0;">
+            <h4 style="margin:0 0 6px 0; font-size:12px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:4px;">⏱️ Pace Tempi Giro (Giri 2-15)</h4>
+            <svg viewBox="0 0 420 160" style="width:100%; height:auto; background:#0b0f19; border-radius:6px; border:1px solid #282e3f; padding:4px;">
+                <line x1="25" y1="25.0" x2="395" y2="25.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="52.5" x2="395" y2="52.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="80.0" x2="395" y2="80.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="107.5" x2="395" y2="107.5" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+<line x1="25" y1="135.0" x2="395" y2="135.0" stroke="rgba(255,255,255,0.08)" stroke-dasharray="3" />
+
+                <polyline fill="none" class="drv-polyline drv-poly-STR" data-drv="STR" stroke="#229971" stroke-width="2.2" points="25.0,72.7 40.4,63.5 55.8,72.7 71.2,72.7 86.7,63.5 102.1,72.7 117.5,72.7 132.9,63.5 148.3,72.7 163.8,72.7 179.2,63.5 194.6,72.7 210.0,72.7 225.4,63.5 240.8,72.7 256.2,72.7 271.7,63.5 287.1,72.7 302.5,72.7 317.9,63.5 333.3,72.7 348.8,72.7 364.2,63.5 379.6,72.7 395.0,72.7" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-ALO" data-drv="ALO" stroke="#229971" stroke-width="2.2" points="25.0,65.3 40.4,56.2 55.8,65.3 71.2,65.3 86.7,56.2 102.1,65.3 117.5,65.3 132.9,56.2 148.3,65.3 163.8,65.3 179.2,56.2 194.6,65.3 210.0,65.3 225.4,56.2 240.8,65.3 256.2,65.3 271.7,56.2 287.1,65.3 302.5,65.3 317.9,56.2 333.3,65.3 348.8,65.3 364.2,56.2 379.6,65.3 395.0,65.3" style="display: inline;" />
+<polyline fill="none" class="drv-polyline drv-poly-COL" data-drv="COL" stroke="#00A0DE" stroke-width="2.2" points="25.0,58.0 40.4,48.8 55.8,58.0 71.2,58.0 86.7,48.8 102.1,58.0 117.5,58.0 132.9,48.8 148.3,58.0 163.8,58.0 179.2,48.8 194.6,58.0 210.0,58.0 225.4,48.8 240.8,58.0 256.2,58.0 271.7,48.8 287.1,58.0 302.5,58.0 317.9,48.8 333.3,58.0 348.8,58.0 364.2,48.8 379.6,58.0 395.0,58.0" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-OCO" data-drv="OCO" stroke="#FF8700" stroke-width="2.2" points="25.0,50.7 40.4,41.5 55.8,50.7 71.2,50.7 86.7,41.5 102.1,50.7 117.5,50.7 132.9,41.5 148.3,50.7 163.8,50.7 179.2,41.5 194.6,50.7 210.0,50.7 225.4,41.5 240.8,50.7 256.2,50.7 271.7,41.5 287.1,50.7 302.5,50.7 317.9,41.5 333.3,50.7 348.8,50.7 364.2,41.5 379.6,50.7 395.0,50.7" style="display: none;" />
+<polyline fill="none" class="drv-polyline drv-poly-ALB" data-drv="ALB" stroke="#00A0DE" stroke-width="2.2" points="25.0,43.3 40.4,34.2 55.8,43.3 71.2,43.3 86.7,34.2 102.1,43.3 117.5,43.3 132.9,34.2 148.3,43.3 163.8,43.3 179.2,34.2 194.6,43.3 210.0,43.3 225.4,34.2 240.8,43.3 256.2,43.3 271.7,34.2 287.1,43.3 302.5,43.3 317.9,34.2 333.3,43.3 348.8,43.3 364.2,34.2 379.6,43.3 395.0,43.3" style="display: none;" />
+
+            </svg>
+        </div>
+        
+        </div>
+        
+    <div class="panel" style="margin-top:16px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:6px; display:flex; justify-content:space-between;">
+            ⏱️ CONFRONTO SETTORI & GIRO IDEALE (GRUPPO 3)
+            <small style="color:#38bdf8; font-weight:800;">Giro Ideale: 1:84.000</small>
+        </h4>
+        <table>
+            <thead>
+                <tr><th>Pilota</th><th>Settore 1 (S1)</th><th>Settore 2 (S2)</th><th>Settore 3 (S3)</th><th>Giro Ideale</th></tr>
+            </thead>
+            <tbody>
+                
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#229971">STR</strong></td>
+            <td style="padding:6px;">27.700 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;">30.900 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.200 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:84.000</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#229971">ALO</strong></td>
+            <td style="padding:6px;">27.780 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">31.010 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;">24.250 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:84.240</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#00A0DE">COL</strong></td>
+            <td style="padding:6px;">27.860 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">31.120 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.300 <span class="micro-sec purp" style="padding:2px 6px;">P1</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:84.480</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#FF8700">OCO</strong></td>
+            <td style="padding:6px;">27.940 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">31.230 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.350 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:84.720</strong></td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px;"><strong style="color:#00A0DE">ALB</strong></td>
+            <td style="padding:6px;">28.020 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">31.340 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;">24.400 <span class="micro-sec p-best" style="padding:2px 6px;">PB</span></td>
+            <td style="padding:6px;"><strong style="color:#38bdf8;">1:84.960</strong></td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+        
+    <div class="panel" style="margin-top:16px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13px; text-transform:uppercase; color:#f8fafc; border-bottom:1px solid #282e3f; padding-bottom:6px;">
+            🏎️ CONFRONTO COMPOUND & DEGRADO GOMME (GRUPPO 3)
+        </h4>
+        <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:12px;">
+            <div style="background:#0b0f19; border:1px solid #e10600; border-radius:8px; padding:12px;">
+                <strong style="color:#e10600; font-size:12.5px; display:block;">🔴 SOFT (C5)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:24.045</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.085s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>18 Giri</strong></div>
+            </div>
+            <div style="background:#0b0f19; border:1px solid #ffd166; border-radius:8px; padding:12px;">
+                <strong style="color:#ffd166; font-size:12.5px; display:block;">🟡 MEDIUM (C3)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:24.610</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.045s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>32 Giri</strong></div>
+            </div>
+            <div style="background:#0b0f19; border:1px solid #ffffff; border-radius:8px; padding:12px;">
+                <strong style="color:#ffffff; font-size:12.5px; display:block;">⚪ HARD (C2)</strong>
+                <div style="font-size:12px; color:#cbd5e1; margin-top:4px;">Passo: <strong>1:25.180</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Degrado: <strong>+0.020s / giro</strong></div>
+                <div style="font-size:12px; color:#94a3b8;">Vita Stint: <strong>45 Giri</strong></div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+    
+                </div>
+
+                <!-- TAB 4: MIGLIOR TEMPO PER OGNI PILOTA X COMPOUND (3 TABELLE SEPARATE) -->
+                <div id="tab-compound-matrix" class="tab-content">
+                    
+    <div class="panel" style="margin-bottom:20px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13.5px; text-transform:uppercase; color:#e10600; border-bottom:1px solid #282e3f; padding-bottom:6px; display:flex; justify-content:space-between;">
+            CLASSIFICA MIGLIOR TEMPO SU GOMMA SOFT
+            <span class="tire-chip SOFT" style="font-size:11px;">SOFT</span>
+        </h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pos</th>
+                    <th>Pilota / Scuderia</th>
+                    <th>Miglior Tempo SOFT</th>
+                    <th>Distacco</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>1</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#E80020; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#E80020">LEC</strong> <small style="color:#94a3b8; margin-left:6px;">Ferrari</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:22.000 💜</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">LEADER</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>2</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#E80020; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#E80020">HAM</strong> <small style="color:#94a3b8; margin-left:6px;">Ferrari</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:22.300</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.285s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>3</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#27F4D2; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#27F4D2">ANT</strong> <small style="color:#94a3b8; margin-left:6px;">Mercedes</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:22.415</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.570s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>4</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8000; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8000">NOR</strong> <small style="color:#94a3b8; margin-left:6px;">McLaren</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:22.491 💜</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.855s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>5</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#27F4D2; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#27F4D2">RUS</strong> <small style="color:#94a3b8; margin-left:6px;">Mercedes</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:22.589</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.140s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>6</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">HAD</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.218</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.425s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>7</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">VER</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.433</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.710s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>8</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#6692FF; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#6692FF">LAW</strong> <small style="color:#94a3b8; margin-left:6px;">Racing Bulls</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.900</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.995s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>9</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#52E252; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#52E252">HUL</strong> <small style="color:#94a3b8; margin-left:6px;">Sauber</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.964</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.280s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>10</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#229971; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#229971">STR</strong> <small style="color:#94a3b8; margin-left:6px;">Aston Martin</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.110</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.565s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>11</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#229971; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#229971">ALO</strong> <small style="color:#94a3b8; margin-left:6px;">Aston Martin</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.220</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.850s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>12</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">COL</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.500</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.135s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>13</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8700; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8700">OCO</strong> <small style="color:#94a3b8; margin-left:6px;">Alpine</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.620</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.420s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>14</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">ALB</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.810</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.705s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>15</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">SAI</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.950</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.990s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>16</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#B6BABD; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#B6BABD">BEA</strong> <small style="color:#94a3b8; margin-left:6px;">Haas</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:25.100</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.275s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>17</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8700; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8700">GAS</strong> <small style="color:#94a3b8; margin-left:6px;">Alpine</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:25.320</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.560s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>18</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#52E252; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#52E252">BOR</strong> <small style="color:#94a3b8; margin-left:6px;">Sauber</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:25.680</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.845s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>19</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#6692FF; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#6692FF">LIN</strong> <small style="color:#94a3b8; margin-left:6px;">Racing Bulls</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:25.931</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.130s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>20</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#e10600; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#e10600">PER</strong> <small style="color:#94a3b8; margin-left:6px;">Cadillac</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.100</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.415s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>21</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#e10600; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#e10600">BOT</strong> <small style="color:#94a3b8; margin-left:6px;">Cadillac</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.450</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.700s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>22</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">TSU</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.900</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.985s</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                    
+    <div class="panel" style="margin-bottom:20px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13.5px; text-transform:uppercase; color:#ffd166; border-bottom:1px solid #282e3f; padding-bottom:6px; display:flex; justify-content:space-between;">
+            CLASSIFICA MIGLIOR TEMPO SU GOMMA MEDIUM
+            <span class="tire-chip MEDIUM" style="font-size:11px;">MEDIUM</span>
+        </h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pos</th>
+                    <th>Pilota / Scuderia</th>
+                    <th>Miglior Tempo MEDIUM</th>
+                    <th>Distacco</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>1</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#E80020; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#E80020">LEC</strong> <small style="color:#94a3b8; margin-left:6px;">Ferrari</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:22.890 💜</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">LEADER</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>2</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#E80020; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#E80020">HAM</strong> <small style="color:#94a3b8; margin-left:6px;">Ferrari</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.010</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.285s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>3</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#27F4D2; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#27F4D2">ANT</strong> <small style="color:#94a3b8; margin-left:6px;">Mercedes</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.050</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.570s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>4</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8000; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8000">NOR</strong> <small style="color:#94a3b8; margin-left:6px;">McLaren</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.120</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.855s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>5</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#27F4D2; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#27F4D2">RUS</strong> <small style="color:#94a3b8; margin-left:6px;">Mercedes</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.220</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.140s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>6</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">VER</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.810</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.425s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>7</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">HAD</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.950</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.710s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>8</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#6692FF; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#6692FF">LAW</strong> <small style="color:#94a3b8; margin-left:6px;">Racing Bulls</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.310</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.995s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>9</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#52E252; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#52E252">HUL</strong> <small style="color:#94a3b8; margin-left:6px;">Sauber</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.450</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.280s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>10</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#229971; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#229971">STR</strong> <small style="color:#94a3b8; margin-left:6px;">Aston Martin</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:25.412</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.565s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>11</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#229971; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#229971">ALO</strong> <small style="color:#94a3b8; margin-left:6px;">Aston Martin</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:25.610</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.850s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>12</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">COL</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:25.900</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.135s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>13</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">ALB</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.120</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.420s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>14</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">SAI</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.300</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.705s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>15</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8700; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8700">OCO</strong> <small style="color:#94a3b8; margin-left:6px;">Alpine</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.330</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.990s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>16</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#6692FF; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#6692FF">LIN</strong> <small style="color:#94a3b8; margin-left:6px;">Racing Bulls</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.400</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.275s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>17</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8700; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8700">GAS</strong> <small style="color:#94a3b8; margin-left:6px;">Alpine</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.850</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.560s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>18</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#B6BABD; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#B6BABD">BEA</strong> <small style="color:#94a3b8; margin-left:6px;">Haas</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.900</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.845s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>19</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#52E252; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#52E252">BOR</strong> <small style="color:#94a3b8; margin-left:6px;">Sauber</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:27.400</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.130s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>20</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#e10600; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#e10600">PER</strong> <small style="color:#94a3b8; margin-left:6px;">Cadillac</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:27.900</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.415s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>21</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#e10600; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#e10600">BOT</strong> <small style="color:#94a3b8; margin-left:6px;">Cadillac</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:28.500</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.700s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>22</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">TSU</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:28.900</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.985s</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                    
+    <div class="panel" style="margin-bottom:20px; padding:16px;">
+        <h4 style="margin:0 0 10px 0; font-size:13.5px; text-transform:uppercase; color:#ffffff; border-bottom:1px solid #282e3f; padding-bottom:6px; display:flex; justify-content:space-between;">
+            CLASSIFICA MIGLIOR TEMPO SU GOMMA HARD
+            <span class="tire-chip HARD" style="font-size:11px;">HARD</span>
+        </h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Pos</th>
+                    <th>Pilota / Scuderia</th>
+                    <th>Miglior Tempo HARD</th>
+                    <th>Distacco</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>1</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#27F4D2; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#27F4D2">ANT</strong> <small style="color:#94a3b8; margin-left:6px;">Mercedes</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.472 💜</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">LEADER</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>2</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#E80020; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#E80020">LEC</strong> <small style="color:#94a3b8; margin-left:6px;">Ferrari</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.510</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.285s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>3</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#E80020; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#E80020">HAM</strong> <small style="color:#94a3b8; margin-left:6px;">Ferrari</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.640</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.570s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>4</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#27F4D2; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#27F4D2">RUS</strong> <small style="color:#94a3b8; margin-left:6px;">Mercedes</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.759</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+0.855s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>5</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8000; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8000">NOR</strong> <small style="color:#94a3b8; margin-left:6px;">McLaren</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:23.950</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.140s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>6</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">VER</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.110</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.425s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>7</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">HAD</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.122</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.710s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>8</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#6692FF; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#6692FF">LAW</strong> <small style="color:#94a3b8; margin-left:6px;">Racing Bulls</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:24.990</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+1.995s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>9</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#52E252; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#52E252">HUL</strong> <small style="color:#94a3b8; margin-left:6px;">Sauber</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:25.100</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.280s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>10</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#229971; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#229971">STR</strong> <small style="color:#94a3b8; margin-left:6px;">Aston Martin</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.010</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.565s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>11</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">COL</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.100</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+2.850s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>12</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#229971; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#229971">ALO</strong> <small style="color:#94a3b8; margin-left:6px;">Aston Martin</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.150</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.135s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>13</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">SAI</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.710</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.420s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>14</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8700; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8700">OCO</strong> <small style="color:#94a3b8; margin-left:6px;">Alpine</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.890</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.705s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>15</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#00A0DE; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#00A0DE">ALB</strong> <small style="color:#94a3b8; margin-left:6px;">Williams</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:26.910</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+3.990s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>16</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#B6BABD; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#B6BABD">BEA</strong> <small style="color:#94a3b8; margin-left:6px;">Haas</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:27.200</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.275s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>17</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#FF8700; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#FF8700">GAS</strong> <small style="color:#94a3b8; margin-left:6px;">Alpine</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:27.450</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.560s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>18</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#52E252; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#52E252">BOR</strong> <small style="color:#94a3b8; margin-left:6px;">Sauber</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:28.100</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+4.845s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>19</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#e10600; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#e10600">PER</strong> <small style="color:#94a3b8; margin-left:6px;">Cadillac</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:28.100</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.130s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>20</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#6692FF; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#6692FF">LIN</strong> <small style="color:#94a3b8; margin-left:6px;">Racing Bulls</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:28.836</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.415s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>21</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#e10600; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#e10600">BOT</strong> <small style="color:#94a3b8; margin-left:6px;">Cadillac</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:29.100</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.700s</td>
+        </tr>
+        
+        <tr style="border-bottom:1px solid #282e3f;">
+            <td style="padding:6px 10px;"><strong>22</strong></td>
+            <td style="padding:6px 10px;">
+                <div style="display:flex; align-items:center;">
+                    <span style="width:8px; height:8px; border-radius:50%; background:#3671C6; display:inline-block; margin-right:8px;"></span>
+                    <strong style="color:#3671C6">TSU</strong> <small style="color:#94a3b8; margin-left:6px;">Red Bull Racing</small>
+                </div>
+            </td>
+            <td style="padding:6px 10px;"><strong style="color:#fff;">1:29.500</strong></td>
+            <td style="padding:6px 10px; color:#cbd5e1; font-weight:700;">+5.985s</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                </div>
+
+                <!-- TAB 5: MATRICE STINT -->
+                <div id="tab-stints" class="tab-content">
+                    <div class="panel">
+                        <h3 class="panel-title">Matrice di Confronto Stint & Mescola Gomme</h3>
+                        <div style="padding-top:10px;">
+                            <div style="display:grid; grid-template-columns: 120px 1fr; align-items:center; gap:12px; margin-bottom:12px;">
+                                <strong style="color:#FF8000;">NOR (McLaren)</strong>
+                                <div style="display:flex; height:24px; border-radius:6px; overflow:hidden; background:#0b0f19; border:1px solid #282e3f;">
+                                    <div style="background:#e10600; width:35%; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:900; color:#fff;">SOFT (24L)</div>
+                                    <div style="background:#ffd166; width:45%; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:900; color:#000;">MEDIUM (32L)</div>
+                                    <div style="background:#ffffff; width:20%; display:flex; align-items:center; justify-content:center; font-size:10px; font-weight:900; color:#000;">HARD (14L)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TAB 6: RACE CONTROL -->
+                <div id="tab-rc" class="tab-content">
+                    <div class="panel">
+                        <h3 class="panel-title">Messaggi Direzione Gara (Race Control Messages)</h3>
+                        <div style="background:#0b0f19; border:1px solid #282e3f; border-radius:8px; padding:16px;">
+                            <div style="border-left:3px solid #22c55e; padding:6px 12px; margin-bottom:8px; font-size:13px;">▶ <strong>16:21:21:</strong> CHEQUERED FLAG - SESSION COMPLETED</div>
+                            <div style="border-left:3px solid #f59e0b; padding:6px 12px; margin-bottom:8px; font-size:13px;">▶ <strong>15:02:40:</strong> BLACK AND WHITE FLAG FOR CAR 5 (BOR) - TRACK LIMITS</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CLIENT INTERACTIVE TAB SWITCHER & DRIVER TOGGLES -->
+    <script>
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+                
+                btn.classList.add('active');
+                const targetId = btn.getAttribute('data-tab');
+                const targetEl = document.getElementById(targetId);
+                if (targetEl) targetEl.classList.add('active');
+            });
+        });
+
+        document.querySelectorAll('.drv-toggle').forEach(input => {
+            input.addEventListener('change', (e) => {
+                const drv = e.target.getAttribute('data-drv');
+                const grp = e.target.getAttribute('data-group');
+                const isChecked = e.target.checked;
+                
+                const label = e.target.closest('.toggle-btn');
+                if (label) {
+                    if (isChecked) label.classList.add('active');
+                    else label.classList.remove('active');
+                }
+
+                document.querySelectorAll('#tab-' + grp + ' .drv-poly-' + drv).forEach(poly => {
+                    poly.style.display = isChecked ? 'inline' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

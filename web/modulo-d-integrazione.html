@@ -1,0 +1,163 @@
+<!--
+  INTEGRAZIONE FORMULAPADDOCK - Classifica Finale & Live Timing
+  Styling perfettamente uniformato al tema FormulaPaddock (live-timing-f1)
+-->
+
+<div id="modulo-d" class="formulapaddock-live-standings-card" style="
+    background: #161820;
+    border: 1px solid #252836;
+    border-top: 3px solid #e10600;
+    border-radius: 8px;
+    padding: 24px;
+    color: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 25px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+">
+    <!-- HEADER SCHEDA TEMA FORMULAPADDOCK -->
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; border-bottom: 1px solid #252836; padding-bottom: 16px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <span style="background: #e10600; color: #ffffff; padding: 4px 10px; border-radius: 4px; font-weight: 900; font-size: 0.9rem; letter-spacing: 1px;">F1</span>
+            <div>
+                <h3 style="margin: 0; color: #ffffff; font-weight: 800; font-size: 1.25rem; text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; gap: 8px;">
+                    CLASSIFICA FINALE & TELEMETRIA UNDERCUTF1
+                </h3>
+                <p style="margin: 4px 0 0 0; color: #8e929b; font-size: 0.85rem;">Risultati e tempi ufficiali di gara ed esportazione per il Modulo D</p>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <button id="import-local-standings" style="
+                background: #e10600;
+                color: #ffffff;
+                border: none;
+                padding: 10px 20px;
+                font-weight: 800;
+                font-size: 0.85rem;
+                border-radius: 4px;
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                box-shadow: 0 4px 12px rgba(225, 6, 0, 0.35);
+                transition: all 0.2s ease;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            ">
+                🏁 CARICA CLASSIFICA
+            </button>
+
+            <button id="export-formulapaddock-btn" style="
+                background: #222634;
+                color: #ffffff;
+                border: 1px solid #363b4d;
+                padding: 10px 20px;
+                font-weight: 700;
+                font-size: 0.85rem;
+                border-radius: 4px;
+                cursor: pointer;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+                transition: all 0.2s ease;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            ">
+                💾 ESPORTA UNDERCUT
+            </button>
+        </div>
+    </div>
+
+    <!-- AREA NOTIFICHE / STATUS -->
+    <div id="modulo-d-status" style="
+        padding: 12px 16px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        font-size: 0.9rem;
+        display: none;
+    "></div>
+
+    <!-- TABELLA TEMA FORMULAPADDOCK -->
+    <div style="overflow-x: auto; border-radius: 6px; border: 1px solid #252836;">
+        <table id="classifica-finale" style="
+            width: 100%;
+            border-collapse: collapse;
+            background: #14161f;
+            color: #ffffff;
+            font-size: 0.9rem;
+        ">
+            <thead style="background: #101218; color: #8e929b; text-transform: uppercase; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.5px; border-bottom: 2px solid #e10600;">
+                <tr>
+                    <th style="padding: 12px; text-align: left; border-right: 1px solid #252836; width: 60px;">POS</th>
+                    <th style="padding: 12px; text-align: left; border-right: 1px solid #252836; width: 50px;">N.</th>
+                    <th style="padding: 12px; text-align: left; border-right: 1px solid #252836;">PILOTA</th>
+                    <th style="padding: 12px; text-align: left; border-right: 1px solid #252836;">TEAM</th>
+                    <th style="padding: 12px; text-align: left; border-right: 1px solid #252836;">BEST LAP</th>
+                    <th style="padding: 12px; text-align: left; border-right: 1px solid #252836;">ULTIMO GIRO</th>
+                    <th style="padding: 12px; text-align: left; border-right: 1px solid #252836; width: 60px;">GIRI</th>
+                    <th style="padding: 12px; text-align: left;">GAP</th>
+                </tr>
+            </thead>
+            <tbody id="classifica-finale-body">
+                <tr>
+                    <td colspan="8" style="padding: 30px; text-align: center; color: #8e929b;">
+                        Clicca su <strong style="color: #e10600;">"🏁 CARICA CLASSIFICA"</strong> per visualizzare i tempi live.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- TIMESTAMP PIE DI PAGINA -->
+    <div id="modulo-d-timestamp" style="
+        text-align: right;
+        color: #8e929b;
+        font-size: 0.8rem;
+        margin-top: 12px;
+        font-style: italic;
+    "></div>
+</div>
+
+<style>
+    #import-local-standings:hover {
+        background: #ff0700 !important;
+        transform: translateY(-1px);
+    }
+    #export-formulapaddock-btn:hover {
+        background: #2d3345 !important;
+        border-color: #4a5168 !important;
+    }
+    #classifica-finale tbody tr {
+        border-bottom: 1px solid #1f222e;
+        transition: background 0.15s ease;
+    }
+    #classifica-finale tbody tr:nth-child(even) {
+        background: #181b24;
+    }
+    #classifica-finale tbody tr:hover {
+        background: #202431;
+    }
+    #classifica-finale tbody td {
+        padding: 10px 12px;
+    }
+</style>
+
+<script>
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadClassificaScript);
+    } else {
+        loadClassificaScript();
+    }
+
+    function loadClassificaScript() {
+        if (!document.querySelector('script[src*="classifica-loader.js"]')) {
+            const script = document.createElement('script');
+            script.src = 'https://www.undercut-f1.it/classifica-loader.js';
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    }
+</script>
+
+
