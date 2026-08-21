@@ -43,43 +43,50 @@ jobs:
             fi
           done
 
-          echo '=== CONCATENATED BASE64 ==='
+          echo '=== CONCATENATED PAYLOAD ==='
           cat .bootstrap/overlay.part.* > /tmp/all.b64
-          echo "text_bytes=$(wc -c < /tmp/all.b64)"
-          if base64 --decode /tmp/all.b64 > /tmp/all.bin 2>/tmp/allb64err; then
-            echo "base64=ok decoded_bytes=$(wc -c < /tmp/all.bin)"
-            printf 'first16='; xxd -p -l 16 /tmp/all.bin || true
-            printf 'last16='; tail -c 16 /tmp/all.bin | xxd -p || true
-            printf 'file='; file -b /tmp/all.bin || true
-            if xz -t /tmp/all.bin >/tmp/allxzout 2>/tmp/allxzerr; then
-              echo 'xz_test=ok'
-            else
-              code=$?
-              echo "xz_test=fail($code): $(tr '\n' ' ' </tmp/allxzerr)"
-            fi
-          else
-            code=$?
-            echo "base64=fail($code): $(tr '\n' ' ' </tmp/allb64err)"
-          fi
-
-          echo '=== CONCATENATED DECODED PARTS ==='
-          : > /tmp/decoded-parts.bin
-          all_ok=1
-          for p in .bootstrap/overlay.part.*; do
-            if base64 --decode "$p" >> /tmp/decoded-parts.bin 2>/tmp/partb64err; then
-              :
-            else
-              all_ok=0
-              echo "decode failed for $p: $(tr '\n' ' ' </tmp/partb64err)"
-            fi
-          done
-          echo "individual_decode_all_ok=$all_ok decoded_bytes=$(wc -c < /tmp/decoded-parts.bin)"
-          printf 'first16='; xxd -p -l 16 /tmp/decoded-parts.bin || true
-          printf 'last16='; tail -c 16 /tmp/decoded-parts.bin | xxd -p || true
-          printf 'file='; file -b /tmp/decoded-parts.bin || true
-          if xz -t /tmp/decoded-parts.bin >/tmp/partsxzout 2>/tmp/partsxzerr; then
+          base64 --decode /tmp/all.b64 > /tmp/all.bin
+          echo "text_bytes=$(wc -c < /tmp/all.b64) decoded_bytes=$(wc -c < /tmp/all.bin)"
+          printf 'first16='; xxd -p -l 16 /tmp/all.bin || true
+          printf 'last16='; tail -c 16 /tmp/all.bin | xxd -p || true
+          printf 'file='; file -b /tmp/all.bin || true
+          if xz -t /tmp/all.bin >/tmp/allxzout 2>/tmp/allxzerr; then
             echo 'xz_test=ok'
           else
             code=$?
-            echo "xz_test=fail($code): $(tr '\n' ' ' </tmp/partsxzerr)"
+            echo "xz_test=fail($code): $(tr '\n' ' ' </tmp/allxzerr)"
           fi
+
+          echo '=== PARTIAL XZ RECOVERY ==='
+          rm -f /tmp/partial.out
+          if xz -dc /tmp/all.bin > /tmp/partial.out 2>/tmp/partial.err; then
+            echo 'xz_decompress=ok'
+          else
+            code=$?
+            echo "xz_decompress=partial/fail($code): $(tr '\n' ' ' </tmp/partial.err)"
+          fi
+          echo "partial_bytes=$(wc -c < /tmp/partial.out) modulo512=$(( $(wc -c < /tmp/partial.out) % 512 ))"
+          printf 'partial_file='; file -b /tmp/partial.out || true
+          printf 'partial_first16='; xxd -p -l 16 /tmp/partial.out || true
+          printf 'partial_last64='; tail -c 64 /tmp/partial.out | xxd -p || true
+
+          if tar -tf /tmp/partial.out > /tmp/tarlist 2>/tmp/tarerr; then
+            tar_rc=0
+          else
+            tar_rc=$?
+          fi
+          echo "tar_list_rc=$tar_rc entries=$(wc -l < /tmp/tarlist) error=$(tr '\n' ' ' </tmp/tarerr)"
+          echo 'tar_first5:'
+          head -n 5 /tmp/tarlist || true
+          echo 'tar_last10:'
+          tail -n 10 /tmp/tarlist || true
+
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('/tmp/partial.out').read_bytes()
+          trailing=0
+          for b in reversed(p):
+              if b==0: trailing+=1
+              else: break
+          print(f'trailing_zero_bytes={trailing}')
+          PY
