@@ -1,0 +1,135 @@
+name: Extract LFS ZIP into repository
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/extract-lfs-zip.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout with Git LFS
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Validate and extract ZIP
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          test -f undercut-f1-master.zip
+          file undercut-f1-master.zip
+          unzip -t undercut-f1-master.zip >/dev/null
+
+          rm -rf /tmp/unpacked
+          mkdir -p /tmp/unpacked
+
+          python3 - <<'PY'
+          import os, re, stat, zipfile
+          from pathlib import Path, PurePosixPath
+
+          src = Path('undercut-f1-master.zip')
+          out = Path('/tmp/unpacked')
+          max_files = 100000
+          max_total = 2 * 1024**3
+          max_single = 95 * 1024**2
+
+          with zipfile.ZipFile(src) as zf:
+              infos = zf.infolist()
+              if len(infos) > max_files:
+                  raise SystemExit(f'Too many ZIP entries: {len(infos)}')
+
+              total = 0
+              for info in infos:
+                  p = PurePosixPath(info.filename)
+                  if p.is_absolute() or '..' in p.parts:
+                      raise SystemExit(f'Unsafe ZIP path: {info.filename}')
+
+                  mode = (info.external_attr >> 16) & 0xFFFF
+                  if stat.S_ISLNK(mode):
+                      raise SystemExit(f'Symlink entry blocked: {info.filename}')
+
+                  if not info.is_dir():
+                      total += info.file_size
+                      if info.file_size > max_single:
+                          raise SystemExit(f'File over GitHub 100 MB limit: {info.filename}')
+
+              if total > max_total:
+                  raise SystemExit(f'ZIP expands beyond safety limit: {total} bytes')
+
+              zf.extractall(out)
+
+          # Abort rather than publish obvious local secrets in this public repo.
+          blocked_names = {
+              '.env', 'id_rsa', 'id_dsa', 'id_ecdsa', 'id_ed25519',
+              'credentials.json', 'service-account.json'
+          }
+          blocked_suffixes = {'.p12', '.pfx', '.key'}
+          findings = []
+
+          for p in out.rglob('*'):
+              if not p.is_file():
+                  continue
+              name = p.name.lower()
+              if name in blocked_names or (name.startswith('.env.') and name != '.env.example') or p.suffix.lower() in blocked_suffixes:
+                  findings.append(str(p.relative_to(out)))
+                  continue
+
+              if p.stat().st_size > 2 * 1024 * 1024:
+                  continue
+              try:
+                  data = p.read_bytes()
+                  text = data.decode('utf-8', errors='ignore')
+              except OSError:
+                  continue
+
+              markers = (
+                  '-----BEGIN PRIVATE KEY-----',
+                  '-----BEGIN RSA PRIVATE KEY-----',
+                  '-----BEGIN OPENSSH PRIVATE KEY-----',
+              )
+              if any(m in text for m in markers):
+                  findings.append(str(p.relative_to(out)))
+
+          if findings:
+              print('Potential secret-bearing files found; extraction stopped:')
+              for f in sorted(set(findings))[:100]:
+                  print(f' - {f}')
+              raise SystemExit(2)
+          PY
+
+          shopt -s dotglob nullglob
+          items=(/tmp/unpacked/*)
+          if [ "${#items[@]}" -eq 1 ] && [ -d "${items[0]}" ]; then
+            SRC="${items[0]}"
+          else
+            SRC="/tmp/unpacked"
+          fi
+
+          rsync -a \
+            --exclude='.git/' \
+            --exclude='.github/workflows/' \
+            "$SRC"/ ./
+
+          rm -f .github/workflows/extract-lfs-zip.yml
+
+      - name: Commit extracted project
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Extract undercut F1 project from ZIP"
+          git push origin HEAD:main
