@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/unpack-bootstrap.yml'
+  pull_request:
+    branches: [main]
 
 permissions:
   contents: write
@@ -104,6 +106,7 @@ jobs:
           rm -f .github/workflows/unpack-bootstrap.yml
 
       - name: Commit extracted files
+        if: github.event_name == 'push'
         shell: bash
         run: |
           set -euo pipefail
@@ -116,5 +119,3 @@ jobs:
           fi
           git commit -m "Extract imported livetiming project"
           git push origin HEAD:main
-
-# merged once to trigger the existing workflow on main
