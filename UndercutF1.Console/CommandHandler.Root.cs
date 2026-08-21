@@ -47,7 +47,6 @@ public static partial class CommandHandler
 
         var options = builder.Configuration.Get<ConsoleOptions>() ?? new();
 
-
         if (options.ApiEnabled)
         {
             if (string.IsNullOrEmpty(options.ApiKey))
@@ -68,8 +67,7 @@ public static partial class CommandHandler
 
             builder.Services.AddRouting().AddEndpointsApiExplorer();
             builder.Services.AddCors(opts => opts.AddDefaultPolicy(p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
-
-            builder.Services.AddHostedService<Api.StandingsExportService>();
+            builder.Services.AddHostedService<Api.DashboardRelayService>();
         }
 
         builder.Services.AddOptions<ConsoleOptions>()
