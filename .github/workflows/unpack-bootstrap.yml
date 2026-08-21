@@ -29,7 +29,7 @@ jobs:
           mkdir -p /tmp/unpacked
 
           python3 - <<'PY'
-          import io, os, tarfile, zipfile, lzma, shutil
+          import io, tarfile, zipfile, lzma, shutil
           from pathlib import Path
 
           payload_path = Path('/tmp/import.payload')
@@ -45,7 +45,6 @@ jobs:
 
           extracted = False
 
-          # First try the decoded payload directly as a tar archive (tar.xz/tar.gz/tar/etc.).
           try:
               with tarfile.open(fileobj=io.BytesIO(data), mode='r:*') as tf:
                   for m in tf.getmembers():
@@ -55,7 +54,6 @@ jobs:
           except tarfile.TarError:
               pass
 
-          # If it is a plain XZ stream, decompress and inspect the inner file.
           if not extracted:
               try:
                   inner = lzma.decompress(data)
@@ -75,7 +73,6 @@ jobs:
               except lzma.LZMAError:
                   pass
 
-          # Also allow a ZIP payload directly.
           if not extracted and zipfile.is_zipfile(io.BytesIO(data)):
               with zipfile.ZipFile(io.BytesIO(data)) as zf:
                   for n in zf.namelist():
@@ -86,11 +83,12 @@ jobs:
           if not extracted:
               raise RuntimeError('Imported payload format was not recognized')
 
-          # Ignore OS metadata folders/files if present.
           shutil.rmtree(out / '__MACOSX', ignore_errors=True)
           for p in out.rglob('.DS_Store'):
-              try: p.unlink()
-              except OSError: pass
+              try:
+                  p.unlink()
+              except OSError:
+                  pass
           PY
 
           shopt -s dotglob nullglob
@@ -118,3 +116,5 @@ jobs:
           fi
           git commit -m "Extract imported livetiming project"
           git push origin HEAD:main
+
+# second push: workflow already exists on main
