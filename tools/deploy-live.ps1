@@ -1,7 +1,8 @@
 param(
     [string]$FtpHost = "ftp.formulapaddock.it",
     [string]$RemoteDir = "www.formulapaddock.it",
-    [switch]$NoSsl
+    [switch]$NoSsl,
+    [switch]$StrictCertificateName
 )
 
 $ErrorActionPreference = "Stop"
@@ -26,6 +27,33 @@ $token = [Convert]::ToBase64String($tokenBytes).TrimEnd('=').Replace('+','-').Re
 $secretPath = Join-Path ([System.IO.Path]::GetTempPath()) "live-secret.php"
 $secretContent = "<?php`n`$LIVE_DASH_TOKEN = '$token';`n"
 [System.IO.File]::WriteAllText($secretPath, $secretContent, [System.Text.UTF8Encoding]::new($false))
+
+# Aruba FTPS can present a valid certificate whose subject does not match
+# ftp.<domain>. Aruba's own documentation notes that FTPS clients may ask the
+# user to accept the certificate. By default we emulate that behaviour only
+# for the hostname mismatch case; all other TLS validation errors remain fatal.
+$previousCertCallback = [System.Net.ServicePointManager]::ServerCertificateValidationCallback
+$script:certificateMismatchNoticeShown = $false
+
+if (-not $NoSsl -and -not $StrictCertificateName) {
+    [System.Net.ServicePointManager]::ServerCertificateValidationCallback = {
+        param($sender, $certificate, $chain, $sslPolicyErrors)
+
+        if ($sslPolicyErrors -eq [System.Net.Security.SslPolicyErrors]::None) {
+            return $true
+        }
+
+        if ($sslPolicyErrors -eq [System.Net.Security.SslPolicyErrors]::RemoteCertificateNameMismatch) {
+            if (-not $script:certificateMismatchNoticeShown) {
+                Write-Warning "Aruba FTPS: certificato valido ma nome host non coincidente. Accetto solo questo mismatch; gli altri errori TLS restano bloccati."
+                $script:certificateMismatchNoticeShown = $true
+            }
+            return $true
+        }
+
+        return $false
+    }
+}
 
 function Send-FtpFile {
     param(
@@ -62,6 +90,10 @@ function Send-FtpFile {
 }
 
 try {
+    if ($NoSsl) {
+        Write-Warning "Connessione FTP senza TLS richiesta esplicitamente con -NoSsl."
+    }
+
     Send-FtpFile -LocalPath $liveHtml -RemoteName "live.html"
     Send-FtpFile -LocalPath $liveDataPhp -RemoteName "live-data.php"
     Send-FtpFile -LocalPath $secretPath -RemoteName "live-secret.php"
@@ -81,6 +113,8 @@ try {
     Write-Host "Pagina: https://www.formulapaddock.it/live.html"
 }
 finally {
+    [System.Net.ServicePointManager]::ServerCertificateValidationCallback = $previousCertCallback
+
     if (Test-Path $secretPath) {
         Remove-Item $secretPath -Force
     }
