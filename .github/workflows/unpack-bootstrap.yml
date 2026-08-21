@@ -1,0 +1,120 @@
+name: Unpack imported project
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/unpack-bootstrap.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Rebuild and extract imported project
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .bootstrap/overlay.part.* > /tmp/import.b64
+          base64 --decode /tmp/import.b64 > /tmp/import.payload
+
+          rm -rf /tmp/unpacked
+          mkdir -p /tmp/unpacked
+
+          python3 - <<'PY'
+          import io, os, tarfile, zipfile, lzma, shutil
+          from pathlib import Path
+
+          payload_path = Path('/tmp/import.payload')
+          out = Path('/tmp/unpacked')
+          data = payload_path.read_bytes()
+
+          def safe_target(base: Path, name: str) -> Path:
+              target = (base / name).resolve()
+              base_r = base.resolve()
+              if target != base_r and base_r not in target.parents:
+                  raise RuntimeError(f'Unsafe archive path: {name}')
+              return target
+
+          extracted = False
+
+          # First try the decoded payload directly as a tar archive (tar.xz/tar.gz/tar/etc.).
+          try:
+              with tarfile.open(fileobj=io.BytesIO(data), mode='r:*') as tf:
+                  for m in tf.getmembers():
+                      safe_target(out, m.name)
+                  tf.extractall(out, filter='data')
+              extracted = True
+          except tarfile.TarError:
+              pass
+
+          # If it is a plain XZ stream, decompress and inspect the inner file.
+          if not extracted:
+              try:
+                  inner = lzma.decompress(data)
+                  try:
+                      with tarfile.open(fileobj=io.BytesIO(inner), mode='r:*') as tf:
+                          for m in tf.getmembers():
+                              safe_target(out, m.name)
+                          tf.extractall(out, filter='data')
+                      extracted = True
+                  except tarfile.TarError:
+                      if zipfile.is_zipfile(io.BytesIO(inner)):
+                          with zipfile.ZipFile(io.BytesIO(inner)) as zf:
+                              for n in zf.namelist():
+                                  safe_target(out, n)
+                              zf.extractall(out)
+                          extracted = True
+              except lzma.LZMAError:
+                  pass
+
+          # Also allow a ZIP payload directly.
+          if not extracted and zipfile.is_zipfile(io.BytesIO(data)):
+              with zipfile.ZipFile(io.BytesIO(data)) as zf:
+                  for n in zf.namelist():
+                      safe_target(out, n)
+                  zf.extractall(out)
+              extracted = True
+
+          if not extracted:
+              raise RuntimeError('Imported payload format was not recognized')
+
+          # Ignore OS metadata folders/files if present.
+          shutil.rmtree(out / '__MACOSX', ignore_errors=True)
+          for p in out.rglob('.DS_Store'):
+              try: p.unlink()
+              except OSError: pass
+          PY
+
+          shopt -s dotglob nullglob
+          items=(/tmp/unpacked/*)
+          if [ "${#items[@]}" -eq 1 ] && [ -d "${items[0]}" ]; then
+            SRC="${items[0]}"
+          else
+            SRC="/tmp/unpacked"
+          fi
+
+          rsync -a --exclude='.git/' --exclude='.bootstrap/' "$SRC"/ ./
+          rm -rf .bootstrap
+          rm -f .github/workflows/unpack-bootstrap.yml
+
+      - name: Commit extracted files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Extract imported livetiming project"
+          git push origin HEAD:main
