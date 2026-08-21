@@ -5,6 +5,11 @@
 
 $storage = __DIR__ . '/live-data.json';
 $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
+$LIVE_DASH_TOKEN = '';
+$secretFile = __DIR__ . '/live-secret.php';
+if (is_file($secretFile)) {
+    require $secretFile;
+}
 
 header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
 header('Pragma: no-cache');
@@ -17,6 +22,19 @@ if ($method === 'OPTIONS') {
 }
 
 if ($method === 'POST') {
+    if (!is_string($LIVE_DASH_TOKEN) || $LIVE_DASH_TOKEN === '') {
+        http_response_code(503);
+        echo json_encode(['success' => false, 'error' => 'Relay token not configured']);
+        exit;
+    }
+
+    $providedToken = $_SERVER['HTTP_X_LIVE_TOKEN'] ?? '';
+    if (!is_string($providedToken) || !hash_equals($LIVE_DASH_TOKEN, $providedToken)) {
+        http_response_code(403);
+        echo json_encode(['success' => false, 'error' => 'Forbidden']);
+        exit;
+    }
+
     $raw = file_get_contents('php://input');
     if ($raw === false || trim($raw) === '') {
         http_response_code(400);
