@@ -1,8 +1,7 @@
 param(
     [string]$FtpHost = "ftp.formulapaddock.it",
     [string]$RemoteDir = "www.formulapaddock.it",
-    [switch]$NoSsl,
-    [switch]$StrictCertificateName
+    [int]$FtpPort = 990
 )
 
 $ErrorActionPreference = "Stop"
@@ -16,9 +15,14 @@ if (-not (Test-Path $liveHtml) -or -not (Test-Path $liveDataPhp)) {
     throw "File site/live.html o site/live-data.php mancanti. Esegui prima git pull."
 }
 
+$curl = Get-Command curl.exe -ErrorAction SilentlyContinue
+if (-not $curl) {
+    throw "curl.exe non trovato. Su Windows 10/11 e PowerShell 7 dovrebbe essere gia disponibile."
+}
+
 $user = Read-Host "Username FTP Aruba"
 $securePassword = Read-Host "Password FTP Aruba" -AsSecureString
-$credential = [System.Net.NetworkCredential]::new($user, $securePassword)
+$plainPassword = [System.Net.NetworkCredential]::new('', $securePassword).Password
 
 $tokenBytes = New-Object byte[] 32
 [System.Security.Cryptography.RandomNumberGenerator]::Fill($tokenBytes)
@@ -28,75 +32,44 @@ $secretPath = Join-Path ([System.IO.Path]::GetTempPath()) "live-secret.php"
 $secretContent = "<?php`n`$LIVE_DASH_TOKEN = '$token';`n"
 [System.IO.File]::WriteAllText($secretPath, $secretContent, [System.Text.UTF8Encoding]::new($false))
 
-# Aruba FTPS can present a valid certificate whose subject does not match
-# ftp.<domain>. Aruba's own documentation notes that FTPS clients may ask the
-# user to accept the certificate. By default we emulate that behaviour only
-# for the hostname mismatch case; all other TLS validation errors remain fatal.
-$previousCertCallback = [System.Net.ServicePointManager]::ServerCertificateValidationCallback
-$script:certificateMismatchNoticeShown = $false
-
-if (-not $NoSsl -and -not $StrictCertificateName) {
-    [System.Net.ServicePointManager]::ServerCertificateValidationCallback = {
-        param($sender, $certificate, $chain, $sslPolicyErrors)
-
-        if ($sslPolicyErrors -eq [System.Net.Security.SslPolicyErrors]::None) {
-            return $true
-        }
-
-        if ($sslPolicyErrors -eq [System.Net.Security.SslPolicyErrors]::RemoteCertificateNameMismatch) {
-            if (-not $script:certificateMismatchNoticeShown) {
-                Write-Warning "Aruba FTPS: certificato valido ma nome host non coincidente. Accetto solo questo mismatch; gli altri errori TLS restano bloccati."
-                $script:certificateMismatchNoticeShown = $true
-            }
-            return $true
-        }
-
-        return $false
-    }
-}
-
-function Send-FtpFile {
+function Send-FtpsFile {
     param(
         [Parameter(Mandatory=$true)][string]$LocalPath,
         [Parameter(Mandatory=$true)][string]$RemoteName
     )
 
     $remoteDirClean = $RemoteDir.Trim('/')
-    $uri = "ftp://$FtpHost/$remoteDirClean/$RemoteName"
-    $request = [System.Net.FtpWebRequest]::Create($uri)
-    $request.Method = [System.Net.WebRequestMethods+Ftp]::UploadFile
-    $request.Credentials = $credential
-    $request.UseBinary = $true
-    $request.KeepAlive = $false
-    $request.EnableSsl = -not $NoSsl
+    $uri = "ftps://$FtpHost`:$FtpPort/$remoteDirClean/$RemoteName"
 
-    $bytes = [System.IO.File]::ReadAllBytes($LocalPath)
-    $request.ContentLength = $bytes.Length
-    $stream = $request.GetRequestStream()
-    try {
-        $stream.Write($bytes, 0, $bytes.Length)
-    }
-    finally {
-        $stream.Dispose()
+    # Aruba documents FTPS on port 990 and asks clients to accept the server
+    # certificate. --insecure is scoped only to this known Aruba FTPS host;
+    # transport remains TLS encrypted.
+    & $curl.Source `
+        --fail-with-body `
+        --silent `
+        --show-error `
+        --connect-timeout 20 `
+        --max-time 120 `
+        --ftp-create-dirs `
+        --ftp-pasv `
+        --insecure `
+        --user "$user`:$plainPassword" `
+        --upload-file $LocalPath `
+        $uri
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "Upload FTPS fallito per $RemoteName (curl exit code $LASTEXITCODE)."
     }
 
-    $response = $request.GetResponse()
-    try {
-        Write-Host "OK $RemoteName - $($response.StatusDescription.Trim())"
-    }
-    finally {
-        $response.Dispose()
-    }
+    Write-Host "OK $RemoteName"
 }
 
 try {
-    if ($NoSsl) {
-        Write-Warning "Connessione FTP senza TLS richiesta esplicitamente con -NoSsl."
-    }
+    Write-Host "Connessione Aruba FTPS implicita: $FtpHost`:$FtpPort"
 
-    Send-FtpFile -LocalPath $liveHtml -RemoteName "live.html"
-    Send-FtpFile -LocalPath $liveDataPhp -RemoteName "live-data.php"
-    Send-FtpFile -LocalPath $secretPath -RemoteName "live-secret.php"
+    Send-FtpsFile -LocalPath $liveHtml -RemoteName "live.html"
+    Send-FtpsFile -LocalPath $liveDataPhp -RemoteName "live-data.php"
+    Send-FtpsFile -LocalPath $secretPath -RemoteName "live-secret.php"
 
     [Environment]::SetEnvironmentVariable(
         "UNDERCUTF1_DashboardRelay__Token",
@@ -113,7 +86,8 @@ try {
     Write-Host "Pagina: https://www.formulapaddock.it/live.html"
 }
 finally {
-    [System.Net.ServicePointManager]::ServerCertificateValidationCallback = $previousCertCallback
+    $plainPassword = $null
+    $securePassword = $null
 
     if (Test-Path $secretPath) {
         Remove-Item $secretPath -Force
