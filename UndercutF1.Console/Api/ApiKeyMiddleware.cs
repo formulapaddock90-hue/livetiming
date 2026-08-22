@@ -42,7 +42,9 @@ public class ApiKeyMiddleware
             return;
         }
 
-        if (apiKey != options.ApiKey)
+        if (!System.Security.Cryptography.CryptographicOperations.FixedTimeEquals(
+                System.Text.Encoding.UTF8.GetBytes(apiKey.ToString()),
+                System.Text.Encoding.UTF8.GetBytes(options.ApiKey)))
         {
             _logger.LogWarning("Invalid API key attempt from {RemoteIpAddress}", context.Connection.RemoteIpAddress);
             context.Response.StatusCode = StatusCodes.Status403Forbidden;
