@@ -6,9 +6,15 @@
  */
 
 header('Content-Type: application/json; charset=utf-8');
-header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type, X-API-Key');
+
+$allowedOrigins = ['https://www.formulapaddock.it', 'https://formulapaddock.it'];
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+if ($origin !== '' && in_array($origin, $allowedOrigins, true)) {
+    header("Access-Control-Allow-Origin: {$origin}");
+    header('Vary: Origin');
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(204);
@@ -24,6 +30,14 @@ if (!is_dir(dirname($dataFile))) {
 
 // ── POST: riceve e salva la classifica ──────────────────────────────────────
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $expectedKey = getenv('FP_WEBHOOK_API_KEY') ?: '';
+    $providedKey = $_SERVER['HTTP_X_API_KEY'] ?? '';
+    if ($expectedKey === '' || !hash_equals($expectedKey, $providedKey)) {
+        http_response_code(401);
+        echo json_encode(['success' => false, 'error' => 'API key non valida']);
+        exit;
+    }
+
     $input = file_get_contents('php://input');
     $data  = json_decode($input, true);
 
@@ -40,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'timestamp'   => date('Y-m-d H:i:s'),
     ];
 
-    if (file_put_contents($dataFile, json_encode($payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)) === false) {
+    if (file_put_contents($dataFile, json_encode($payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE), LOCK_EX) === false) {
         http_response_code(500);
         echo json_encode(['success' => false, 'error' => 'Impossibile salvare il file']);
         exit;
