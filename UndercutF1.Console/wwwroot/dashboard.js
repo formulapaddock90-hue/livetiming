@@ -9,22 +9,26 @@ const GROUP_TABS = [
     { groupName: "Gruppo 3", tabId: "gruppo-3", suffix: "g3" }
 ];
 
+// Embedded/WordPress layouts may omit optional panels. A detached fallback
+// keeps the live refresh loop running instead of throwing on a missing node.
+const dashboardElement = id => document.getElementById(id) ?? document.createElement("div");
+
 const elements = {
-    sessionTitle: document.getElementById("session-title"),
-    sessionSubtitle: document.getElementById("session-subtitle"),
-    trackStatus: document.getElementById("track-status"),
-    clockStatus: document.getElementById("clock-status"),
-    meetingName: document.getElementById("meeting-name"),
-    circuitName: document.getElementById("circuit-name"),
-    airTemp: document.getElementById("air-temp"),
-    trackTemp: document.getElementById("track-temp"),
-    windSpeed: document.getElementById("wind-speed"),
-    humidity: document.getElementById("humidity"),
-    updatedAt: document.getElementById("updated-at"),
-    sessionRunning: document.getElementById("session-running"),
-    driverCount: document.getElementById("driver-count"),
-    timingBody: document.getElementById("timing-body"),
-    rcTimeline: document.getElementById("rc-timeline"),
+    sessionTitle: dashboardElement("session-title"),
+    sessionSubtitle: dashboardElement("session-subtitle"),
+    trackStatus: dashboardElement("track-status"),
+    clockStatus: dashboardElement("clock-status"),
+    meetingName: dashboardElement("meeting-name"),
+    circuitName: dashboardElement("circuit-name"),
+    airTemp: dashboardElement("air-temp"),
+    trackTemp: dashboardElement("track-temp"),
+    windSpeed: dashboardElement("wind-speed"),
+    humidity: dashboardElement("humidity"),
+    updatedAt: dashboardElement("updated-at"),
+    sessionRunning: dashboardElement("session-running"),
+    driverCount: dashboardElement("driver-count"),
+    timingBody: dashboardElement("timing-body"),
+    rcTimeline: dashboardElement("rc-timeline"),
     rcCount: document.getElementById("rc-count"),
     driverModal: document.getElementById("driver-modal"),
     driverModalBody: document.getElementById("driver-modal-body"),
@@ -32,8 +36,8 @@ const elements = {
     driverModalClose: document.getElementById("driver-modal-close"),
     lapAlerts: document.getElementById("lap-alerts"),
     popoutBtn: document.getElementById("popoutBtn"),
-    sectorHeatmapContainer: document.getElementById("sector-heatmap-container"),
-    stintMatrixContainer: document.getElementById("stint-matrix-container")
+    sectorHeatmapContainer: dashboardElement("sector-heatmap-container"),
+    stintMatrixContainer: dashboardElement("stint-matrix-container")
 };
 
 const groupElements = Object.fromEntries(
@@ -41,14 +45,14 @@ const groupElements = Object.fromEntries(
         group.groupName,
         {
             tabId: group.tabId,
-            selectedDrivers: document.getElementById(`selected-drivers-${group.suffix}`),
-            lapTimeChart: document.getElementById(`lap-time-chart-${group.suffix}`),
-            lapStatsTable: document.getElementById(`lap-stats-table-${group.suffix}`),
-            sectorRankingTable: document.getElementById(`sector-ranking-table-${group.suffix}`),
-            stintChart: document.getElementById(`stint-chart-${group.suffix}`),
-            pitTable: document.getElementById(`pit-table-${group.suffix}`),
-            compoundRankingTable: document.getElementById(`compound-ranking-table-${group.suffix}`),
-            positionChart: document.getElementById(`position-chart-${group.suffix}`)
+            selectedDrivers: dashboardElement(`selected-drivers-${group.suffix}`),
+            lapTimeChart: dashboardElement(`lap-time-chart-${group.suffix}`),
+            lapStatsTable: dashboardElement(`lap-stats-table-${group.suffix}`),
+            sectorRankingTable: dashboardElement(`sector-ranking-table-${group.suffix}`),
+            stintChart: dashboardElement(`stint-chart-${group.suffix}`),
+            pitTable: dashboardElement(`pit-table-${group.suffix}`),
+            compoundRankingTable: dashboardElement(`compound-ranking-table-${group.suffix}`),
+            positionChart: dashboardElement(`position-chart-${group.suffix}`)
         }
     ])
 );
