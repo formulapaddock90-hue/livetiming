@@ -12,7 +12,6 @@ public static class InfoEndpoints
                         new ApiInfoResponse(
                             Version: "1.0.0",
                             ApiKeyRequired: !string.IsNullOrEmpty(options.ApiKey),
-                            ApiKey: options.ApiKey ?? "Not configured",
                             Endpoints: new ApiEndpointsInfo(
                                 ExportStandingsJSON: "/export/standings/json",
                                 ExportSocialStandings: "/export/social/standings",
@@ -32,7 +31,6 @@ public static class InfoEndpoints
 public record ApiInfoResponse(
     string Version,
     bool ApiKeyRequired,
-    string ApiKey,
     ApiEndpointsInfo Endpoints
 );
 
