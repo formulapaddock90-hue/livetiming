@@ -12,11 +12,10 @@ $allowedOrigins = [
     'http://localhost',
     'http://127.0.0.1'
 ];
-$origin = $_SERVER['HTTP_ORIGIN'] ?? '*';
-if (in_array($origin, $allowedOrigins)) {
+$origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+if ($origin !== '' && in_array($origin, $allowedOrigins, true)) {
     header("Access-Control-Allow-Origin: $origin");
-} else {
-    header("Access-Control-Allow-Origin: *");
+    header('Vary: Origin');
 }
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
@@ -82,6 +81,14 @@ function parseCsv($csvData) {
 
 // ── POST: Ricezione webhook da UndercutF1 (salva in JSON e aggiorna finale.csv) ──
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $expectedKey = getenv('FP_WEBHOOK_API_KEY') ?: '';
+    $providedKey = $_SERVER['HTTP_X_API_KEY'] ?? '';
+    if ($expectedKey === '' || !hash_equals($expectedKey, $providedKey)) {
+        http_response_code(401);
+        echo json_encode(['success' => false, 'error' => 'API key non valida']);
+        exit;
+    }
+
     $input = file_get_contents('php://input');
     $data  = json_decode($input, true);
 
@@ -94,7 +101,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
 
             if (!empty($classifica)) {
-                file_put_contents($dataFile, json_encode($classifica, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+                $encoded = json_encode($classifica, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
+                if (file_put_contents($dataFile, $encoded, LOCK_EX) === false) {
+                    throw new RuntimeException('Impossibile salvare i dati di classifica');
+                }
                 echo json_encode([
                     'success'   => true,
                     'message'   => 'Dati di classifica aggiornati via POST',
@@ -162,7 +172,7 @@ try {
         $classifica = [
             ['position' => '1', 'carNumber' => '4', 'driverName' => 'NOR', 'teamName' => 'McLaren', 'bestLap' => '1:19.228', 'lastLap' => '1:23.625', 'laps' => 70, 'gap' => 'Leader'],
             ['position' => '2', 'carNumber' => '1', 'driverName' => 'VER', 'teamName' => 'Red Bull Racing', 'bestLap' => '1:19.585', 'lastLap' => '1:24.220', 'laps' => 70, 'gap' => '+0.357s'],
-            ['position' => '3', 'carNumber' => '12', 'driverName' => 'ANT', 'teamName' => 'Mercedes', 'bestLap': '1:19.662', 'lastLap' => '1:23.472', 'laps' => 70, 'gap' => '+0.434s'],
+            ['position' => '3', 'carNumber' => '12', 'driverName' => 'ANT', 'teamName' => 'Mercedes', 'bestLap' => '1:19.662', 'lastLap' => '1:23.472', 'laps' => 70, 'gap' => '+0.434s'],
             ['position' => '4', 'carNumber' => '16', 'driverName' => 'LEC', 'teamName' => 'Ferrari', 'bestLap' => '1:19.720', 'lastLap' => '1:23.098', 'laps' => 70, 'gap' => '+0.492s']
         ];
     }
@@ -215,4 +225,3 @@ try {
     ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 }
 ?>
-
