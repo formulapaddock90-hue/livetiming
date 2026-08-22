@@ -11,6 +11,15 @@ autom4te.cache/
 tarballs/
 test-results/
 
+# Local/runtime secrets and generated live data
+.env
+.env.*
+!.env.example
+web/storage/
+web/public/classifica/
+web/classifica-data.json
+web/conn.local.php
+
 .DS_Store
 
 # Mac bundle stuff
