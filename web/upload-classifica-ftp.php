@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, X-API-Key');
 
 require_once 'conn.php';
 
@@ -37,7 +37,7 @@ function uploadClassificaToFtp() {
         }
 
         // Connessione FTP
-        $ftpConnection = ftp_connect($host_ftp);
+        $ftpConnection = ftp_ssl_connect($host_ftp, 21, 15);
         if (!$ftpConnection) {
             throw new Exception("Impossibile connettersi al server FTP");
         }
@@ -61,7 +61,7 @@ function uploadClassificaToFtp() {
         }
 
         ftp_close($ftpConnection);
-        unlink($tmpFile);
+        @unlink($tmpFile);
 
         return [
             'success' => true,
@@ -79,6 +79,13 @@ function uploadClassificaToFtp() {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $expectedKey = getenv('FP_WEBHOOK_API_KEY') ?: '';
+    $providedKey = $_SERVER['HTTP_X_API_KEY'] ?? '';
+    if ($expectedKey === '' || !hash_equals($expectedKey, $providedKey)) {
+        http_response_code(401);
+        echo json_encode(['success' => false, 'error' => 'API key non valida']);
+        exit;
+    }
     echo json_encode(uploadClassificaToFtp());
     exit;
 }
